@@ -1,0 +1,43 @@
+# PDAC-RNA-Protein-Concordance: analysis configuration
+# All paths are relative to the project root.
+
+cohort:
+  label: "CPTAC-3 PDAC"
+  gdc_project: "CPTAC-3"
+  gdc_primary_site: "pancreas"
+  pdc_proteome_study: "PDC000270"   # CPTAC PDA Discovery Study - Proteome (TMT11, CDAP)
+  pdc_quant_type: "log2_ratio"      # CDAP gene-level log2 ratio to the pooled reference channel
+
+gdc:
+  api: "https://api.gdc.cancer.gov/"
+  rna_workflow: "STAR - Counts"
+  maf_workflow: "Aliquot Ensemble Somatic Variant Merging and Masking"
+  cn_workflow: "AscatNGS"
+  download_threads: 6
+
+pdc:
+  api: "https://pdc.cancer.gov/graphql"
+
+paths:
+  raw: "data/raw"
+  interim: "data/interim"
+  processed: "data/processed"
+  db: "db/cancer_proteogenomics.sqlite"
+  tables: "results/tables"
+  figures: "results/figures"
+
+filters:
+  # A protein is kept for correlation / differential analysis when it is quantified
+  # in at least this fraction of the samples in each compared group.
+  protein_min_fraction_quantified: 0.5
+  # Genes kept for RNA analyses: protein-coding, >= 10 counts in at least
+  # `rna_min_samples_fraction` of the samples of the smaller group.
+  rna_min_count: 10
+  rna_min_samples_fraction: 0.5
+  fdr: 0.05
+  lfc_threshold: 1.0
+
+survival:
+  endpoint: "OS"
+  max_followup_days: 1825      # administrative censoring at 5 years
+  seed: 20260112
