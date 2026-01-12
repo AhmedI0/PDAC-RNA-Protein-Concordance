@@ -1,0 +1,38 @@
+# --- data: downloaded or derived from GDC / PDC, rebuilt by the pipeline ---
+data/raw/
+data/interim/
+data/processed/*
+!data/processed/README.md
+
+# --- local caches and temporary files ---
+.cache/
+logs/
+*.tmp
+*.log
+
+# --- R ---
+.Rhistory
+.RData
+.Rproj.user/
+.Renviron
+renv/library/
+renv/local/
+renv/cellar/
+renv/lock/
+renv/python/
+renv/sandbox/
+renv/staging/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- editors / OS ---
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
