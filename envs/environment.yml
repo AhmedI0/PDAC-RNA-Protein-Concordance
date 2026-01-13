@@ -1,0 +1,24 @@
+# Python environment for the data-access, matching, concordance and figure steps.
+#   conda env create -f envs/environment.yml
+# (R / Bioconductor packages are managed separately with renv: see renv.lock)
+name: cancer-proteogenomics
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib-base
+  - seaborn-base
+  - statsmodels
+  - scikit-learn
+  - lifelines
+  - requests
+  - pyarrow
+  - pyyaml
+  - tqdm
+  - adjusttext
+  - upsetplot
+  - openpyxl
+  - pytest
