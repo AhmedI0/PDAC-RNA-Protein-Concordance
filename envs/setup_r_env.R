@@ -30,7 +30,8 @@ renv::settings$bioconductor.version(bioc_version)
 cran_pkgs <- c(
   "BiocManager", "data.table", "yaml", "jsonlite", "DBI", "RSQLite",
   "ggplot2", "ggrepel", "patchwork", "scales", "svglite", "ragg",
-  "survival", "ggsurvfit", "glmnet", "matrixStats", "circlize", "msigdbr", "testthat"
+  "survival", "ggsurvfit", "glmnet", "matrixStats", "tidyestimate",
+  "aricode", "circlize", "msigdbr", "testthat"
 )
 bioc_pkgs <- c(
   "DESeq2", "limma", "edgeR", "apeglm", "fgsea", "GSVA",
