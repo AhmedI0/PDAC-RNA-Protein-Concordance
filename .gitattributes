@@ -1,2 +1,12 @@
 # Store text files with LF line endings, whatever platform wrote them
 * text=auto eol=lf
+
+# Generated outputs: hide from language statistics and collapse in diffs
+results/** linguist-generated=true
+renv.lock linguist-generated=true
+manuscript/references.bib linguist-generated=true
+
+# Binary files
+*.sqlite binary
+*.png binary
+*.jpg binary
