@@ -1,3 +1,4 @@
+"""Minimal client for the NCI Proteomic Data Commons (PDC) GraphQL API."""
 from __future__ import annotations
 
 import time

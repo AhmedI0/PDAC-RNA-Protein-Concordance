@@ -1,3 +1,7 @@
+"""Minimal client for the NCI Genomic Data Commons (GDC) REST API.
+
+Only open-access endpoints are used: /cases, /files, /data and /status.
+"""
 from __future__ import annotations
 
 import hashlib
