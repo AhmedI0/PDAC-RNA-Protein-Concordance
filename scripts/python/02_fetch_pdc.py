@@ -1,3 +1,11 @@
+"""Step 02 - PDC: proteome study metadata, biospecimens, TMT design and the CDAP
+gene-level log2-ratio matrix for the CPTAC PDA discovery proteome (PDC000270).
+
+Outputs (data/raw/pdc/):
+  study.json, biospecimens.tsv, tmt_design.tsv, proteome_log2ratio.tsv.gz
+
+    python scripts/python/02_fetch_pdc.py
+"""
 from __future__ import annotations
 
 import json

@@ -1,3 +1,16 @@
+"""Step 01 - GDC: clinical records, file metadata and open-access downloads.
+
+CPTAC-3 cases with primary site "pancreas":
+  * cases (demographic, diagnoses, treatments, follow-ups, exposures, biospecimens)
+  * RNA-seq gene counts       (STAR - Counts, one file per aliquot)
+  * masked somatic mutations  (Aliquot Ensemble Somatic Variant Merging and Masking, WXS)
+  * gene-level copy number    (AscatNGS, WGS)
+
+Outputs (data/raw/gdc/): cases.json, files_<kind>.json, gdc_status.json and the
+downloaded files under <kind>/<file_id>/<file_name> (md5-checked).
+
+    python scripts/python/01_fetch_gdc.py [--metadata-only]
+"""
 from __future__ import annotations
 
 import argparse
