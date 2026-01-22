@@ -79,6 +79,7 @@ def main() -> None:
     fups.to_sql("follow_ups", con, if_exists="append", index=False)
     trts.to_sql("treatments", con, if_exists="append", index=False)
     (files[files.case_submitter_id.isin(known)]
+     .drop(columns=["case_id", "sample_id"])
      .to_sql("gdc_files", con, if_exists="append", index=False))
     aliq.assign(is_patient_sample=aliq.is_patient_sample.astype(int),
                 in_cdap_matrix=aliq.in_cdap_matrix.astype(int)).to_sql("pdc_aliquots", con, if_exists="append", index=False)
