@@ -30,7 +30,7 @@ def case_table(cases: list[dict]) -> pd.DataFrame:
         path = _first(dx.get("pathology_details"))
         fups = c.get("follow_ups") or []
         fup_days = [_num(f.get("days_to_follow_up")) for f in fups]
-        last_fu = np.nanmax([_num(dx.get("days_to_last_follow_up")), *fup_days])
+        last_fu = pd.Series([_num(dx.get("days_to_last_follow_up")), *fup_days], dtype=float).max(skipna=True)
         dead = demo.get("vital_status") == "Dead"
         days_death = _num(demo.get("days_to_death"))
         stage = dx.get("ajcc_pathologic_stage")
