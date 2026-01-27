@@ -41,3 +41,5 @@ survival:
   endpoint: "OS"
   max_followup_days: 1825      # administrative censoring at 5 years
   seed: 20260112
+
+drivers: ["KRAS", "TP53", "CDKN2A", "SMAD4", "ARID1A", "RNF43", "GNAS", "TGFBR2", "RBM10", "KDM6A"]
