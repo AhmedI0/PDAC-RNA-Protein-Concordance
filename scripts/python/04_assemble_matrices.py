@@ -90,7 +90,7 @@ def main() -> None:
 
     # gene positions from one ASCAT gene-level CN file (same GENCODE v36 gene IDs)
     # one row per (file, sample): keep the tumour row of each tumour/normal WGS pair
-    cn_meta = files[files.kind == "cn"].drop_duplicates("file_id")
+    cn_meta = files[(files.kind == "cn") & (files.tissue == "Tumor")].drop_duplicates("file_id")
     first_cn = cn_meta.iloc[0]
     pos = pd.read_csv(gdir / "cn" / first_cn.file_id / first_cn.file_name, sep="\t",
                       usecols=["gene_id", "chromosome", "start", "end"]).set_index("gene_id")
