@@ -1,0 +1,163 @@
+signature	gene_symbol	source	origin
+Moffitt.Basal.25	ANXA8L2	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	AREG	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	CST6	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	CTSL2	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	DHRS9	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	FAM83A	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	FGFBP1	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	GPR87	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	KRT15	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	KRT17	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	KRT6A	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	KRT6C	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	KRT7	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	LEMD1	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	LY6D	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	S100A2	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	SCEL	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	SERPINB3	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	SERPINB4	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	SLC2A1	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	SPRR1B	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	SPRR3	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	TNS4	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	UCA1	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Basal.25	VGLL1	Moffitt 2015 Nat Genet; tumour-specific basal-like factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	AGR2	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	AGR3	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	ANXA10	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	ATAD4	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	BTNL8	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	CDH17	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	CEACAM6	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	CLRN3	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	CTSE	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	CYP3A7	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	FAM3D	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	KRT20	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	LGALS4	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	LOC400573	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	LYZ	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	MYO1A	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	PLA2G10	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	REG4	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	SPINK4	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	ST6GALNAC1	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	TFF1	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	TFF2	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	TFF3	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	TSPAN8	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Classical.25	VSIG2	Moffitt 2015 Nat Genet; tumour-specific classical factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	CDH11	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	COL10A1	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	COL11A1	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	COL1A1	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	COL1A2	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	COL3A1	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	COL5A1	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	COL5A2	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	COMP	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	CTHRC1	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	FAP	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	FN1	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	FNDC1	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	GREM1	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	INHBA	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	ITGA11	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	LUM	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	MMP11	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	POSTN	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	SFRP2	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	SPARC	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	SULF1	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	THBS2	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	VCAN	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Activated.25	ZNF469	Moffitt 2015 Nat Genet; activated stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	ABCA8	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	ACTG2	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	ADAMTS1	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	ANGPTL7	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	C10orf116	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	C2orf40	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	CDH19	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	DES	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	FABP4	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	GPM6B	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	ID4	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	IGF1	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	LMOD1	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	LPHN3	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	MEOX2	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	MYH11	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	OGN	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	PLP1	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	PTX3	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	RBPMS2	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	RERGL	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	RSPO3	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	SCRG1	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	SYNM	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Moffitt.Normal.25	VIT	Moffitt 2015 Nat Genet; normal stroma factor, top 25	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	CEACAM6	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	AGR2	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	ATP10B	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	CAPN8	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	CEACAM5	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	ELF3	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	ERBB3	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	FOXQ1	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	FXYD3	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	GPRC5A	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	GPX2	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	LGALS4	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	MUC13	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	PLS1	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	S100P	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	SDR16C5	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	ST6GALNAC1	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	TFF1	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	TFF3	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	TMEM45B	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	TOX3	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Classical	TSPAN8	Collisson 2011 Nat Med; classical	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	AHNAK2	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	AIM2	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	CAV1	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	FAM26F	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	FERMT1	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	GPM6B	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	HMMR	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	KRT14	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	LOX	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	PAPPA	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	PHLDA1	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	PMAIP1	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	S100A2	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	SLC16A1	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	SLC2A3	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	SLC5A3	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	TWIST1	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	CKS2	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	HK2	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.QM	NT5E	Collisson 2011 Nat Med; quasi-mesenchymal	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	CEL	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	CELA2B	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	CELA3A	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	CELA3B	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	CFTR	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	CLPS	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	CPB1	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	CTRB2	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	GP2	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	PLA2G1B	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	PNLIP	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	PNLIPRP2	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	PRSS1	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	PRSS2	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	REG1A	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	REG1B	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	REG3A	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	SLC4A4	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	SLC3A1	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
+Collisson.Exocrine	SPINK1	Collisson 2011 Nat Med; exocrine-like	pdacR@5b044b2:data/gene_lists.rds
