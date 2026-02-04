@@ -1,3 +1,10 @@
+"""Matplotlib style and figure export shared by the Python steps.
+
+Every figure is written three times next to each other: SVG (text kept as
+text, editable), and 300 dpi PNG and JPG. Metadata that would change on every
+run (creation date, software build) is left out so re-running the pipeline
+produces identical files.
+"""
 from __future__ import annotations
 
 from pathlib import Path

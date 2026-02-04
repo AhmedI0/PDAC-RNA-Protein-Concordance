@@ -1,3 +1,4 @@
+"""Readers for the processed matrices and sample sheets."""
 from __future__ import annotations
 
 import pandas as pd
