@@ -1,3 +1,11 @@
+# Step 00 - Export the MSigDB gene sets used by the analysis (msigdbr 25.1.1,
+# MSigDB 2025.1.Hs) to one long table that both R and Python steps read.
+#
+#   Rscript scripts/R/00_export_genesets.R
+#
+# Output: data/processed/genesets.tsv.gz  (collection, gs_name, gene_symbol)
+#         results/tables/genesets_pdac_subtypes.tsv (PDAC subtype signatures found in C2:CGP)
+
 source("R/utils.R")
 suppressPackageStartupMessages(library(msigdbr))
 

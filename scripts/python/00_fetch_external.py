@@ -1,3 +1,14 @@
+"""Step 00 - External resources pinned to an exact commit.
+
+PDAC subtype gene lists and the PurIST single-sample classifier, as distributed
+by the Moffitt lab in the pdacR package (github.com/rmoffitt/pdacR):
+  data/gene_lists.rds                 Moffitt 2015 / Collisson 2011 / Bailey 2016 lists
+  data/Moffitt_classifier_2019.RData  PurIST top-scoring-pair logistic model
+
+Outputs: data/raw/external/pdacR_<sha>/...   (extracted by scripts/R/00_export_genesets.R)
+
+    python scripts/python/00_fetch_external.py
+"""
 from __future__ import annotations
 
 import hashlib
