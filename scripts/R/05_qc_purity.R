@@ -122,9 +122,9 @@ write_tsv(pc_r2, "qc_protein_pc_variance.tsv")
 
 # ============================================================== purity
 log_step("Purity: ESTIMATE + KRAS VAF")
-est_in <- data.frame(gene = rownames(vst_sym), vst_sym, check.names = FALSE)
+est_in <- as.data.frame(vst_sym)   # tidy = FALSE: gene symbols are the row names
 est <- est_in |>
-  filter_common_genes(id = "hgnc_symbol", tidy = TRUE, tell_missing = FALSE, find_alias = TRUE) |>
+  filter_common_genes(id = "hgnc_symbol", tidy = FALSE, tell_missing = FALSE, find_alias = TRUE) |>
   estimate_score(is_affymetrix = FALSE)
 est <- as.data.table(est)
 setnames(est, c("sample", "stromal", "immune", "estimate"), c("sample_key", "stromal_score", "immune_score", "estimate_score"))
