@@ -69,10 +69,17 @@ score <- function(m, g) colMeans(m[intersect(g, rownames(m)), , drop = FALSE], n
 ident <- data.table(sample_key = colnames(vst_sym),
                     intestinal_rna = score(vst_sym, INTESTINAL), acinar_rna = score(vst_sym, ACINAR))
 ident <- merge(samples[, .(sample_key, tissue, has_rna, has_protein, included)], ident, by = "sample_key", all.x = TRUE)
-cutoff <- 10   # provisional: gap seen in the score distribution
+# Two reference centres: pancreatic normals (median of normals) and the duodenal
+# cluster (median of samples above the largest gap); a sample is flagged when it
+# lies closer to the duodenal centre.
+x <- sort(ident$intestinal_rna[!is.na(ident$intestinal_rna)])
+gap_at <- which.max(diff(x))
+duo_centre <- median(x[(gap_at + 1):length(x)])
+pan_centre <- median(ident[tissue == "Normal", intestinal_rna], na.rm = TRUE)
+cutoff <- (duo_centre + pan_centre) / 2
 ident[, duodenal_flag := !is.na(intestinal_rna) & intestinal_rna > cutoff]
-log_step(sprintf("intestinal score cut-off %.1f; flagged %s",
-                 cutoff, paste(ident[duodenal_flag == TRUE, sample_key], collapse = ", ")))
+log_step(sprintf("intestinal score: pancreas centre %.1f, duodenal centre %.1f, cut-off %.1f; flagged %s",
+                 pan_centre, duo_centre, cutoff, paste(ident[duodenal_flag == TRUE, sample_key], collapse = ", ")))
 write_tsv(ident[order(-intestinal_rna)], "qc_tissue_identity.tsv")
 
 # analysis sample sheet used by every later step
