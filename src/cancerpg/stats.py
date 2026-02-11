@@ -1,3 +1,4 @@
+"""Small statistical helpers (vectorised where it matters)."""
 from __future__ import annotations
 
 import numpy as np
