@@ -1,0 +1,8 @@
+data	cases
+RNA tumour	160
+Protein tumour	136
+RNA normal	42
+Protein normal	66
+WXS mutations	163
+WGS copy number	147
+Overall survival	160
