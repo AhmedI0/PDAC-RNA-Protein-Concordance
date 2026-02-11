@@ -26,6 +26,19 @@ def test_rowwise_spearman_matches_scipy_with_missing_values():
     assert r.n.iloc[0] == 35
 
 
+def test_partial_spearman_removes_shared_confounder():
+    n = 300
+    z = RNG.normal(size=n)                       # e.g. stromal content
+    x = z + RNG.normal(scale=0.3, size=n)        # mRNA driven by composition
+    y = z + RNG.normal(scale=0.3, size=n)        # protein driven by composition
+    a = pd.DataFrame([x], columns=range(n))
+    b = pd.DataFrame([y], columns=range(n))
+    raw = rowwise_spearman(a, b).rho.iloc[0]
+    part = partial_spearman(a, b, pd.DataFrame({"z": z}, index=range(n))).iloc[0]
+    assert raw > 0.8
+    assert abs(part) < 0.15
+
+
 def test_bh_monotone_and_nan_safe():
     p = np.array([0.01, 0.04, np.nan, 0.03, 0.5])
     q = bh(p)
