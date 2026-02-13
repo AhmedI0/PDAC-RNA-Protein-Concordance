@@ -108,7 +108,10 @@ def main() -> None:
         "sample_key": T,
         "rho_samplewise": [stats.spearmanr(zr[s], zp[s]).statistic for s in T],
     }).merge(pur[["kras_cellularity", "estimate_score"]], left_on="sample_key", right_index=True, how="left")
+    sw = sw.merge(an[["sample_key", "match_level"]], on="sample_key", how="left")
     io.write_table(sw, "concordance_sample.tsv")
+    # does a pooled proteome aliquot (2-3 tumour pieces) weaken the coupling?
+    same, pooled = (sw.loc[sw.match_level == lv, "rho_samplewise"] for lv in ("same_sample", "pooled_sample"))
 
     # ------------------------------------------------------------------ gene sets
     rho = gene_tab.set_index("gene").rho_tumour
@@ -134,6 +137,8 @@ def main() -> None:
         "median_samplewise_rho": sw.rho_samplewise.median(),
         "samplewise_vs_cellularity_rho": stats.spearmanr(sw.rho_samplewise, sw.kras_cellularity, nan_policy="omit").statistic,
         "samplewise_vs_cellularity_p": stats.spearmanr(sw.rho_samplewise, sw.kras_cellularity, nan_policy="omit").pvalue,
+        "median_samplewise_rho_same_sample": same.median(), "median_samplewise_rho_pooled_sample": pooled.median(),
+        "samplewise_same_vs_pooled_p": stats.mannwhitneyu(same, pooled).pvalue,
     }
     io.write_table(pd.Series(summ).rename("value").rename_axis("metric").reset_index(), "concordance_summary.tsv")
     for k, v in summ.items():
