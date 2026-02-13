@@ -1,3 +1,8 @@
+"""Step 06 - Cohort overview: Table 1 and Figure 1 (study design, data
+availability, RNA-protein match levels, overall survival).
+
+    python scripts/python/06_cohort_overview.py
+"""
 from __future__ import annotations
 
 import sys
