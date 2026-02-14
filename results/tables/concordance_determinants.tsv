@@ -1,0 +1,5 @@
+feature	spearman_with_rho	p
+rna_mean	0.123369	1.02801e-32
+rna_sd	0.493893	0
+protein_sd	0.134551	1.20909e-38
+protein_missing_frac	-0.163122	3.32686e-56
