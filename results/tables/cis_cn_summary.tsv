@@ -1,0 +1,10 @@
+metric	value
+tumours with CN	135
+genes tested	6529
+median rho CN-RNA	0.254131
+median rho CN-protein	0.0969826
+genes with RNA dosage effect (FDR<5%)	4304
+of which transmitted to protein	793
+median attenuation, complex members	0.223693
+median attenuation, other genes	0.167778
+Mann-Whitney p (complex vs other)	2.5692e-31
