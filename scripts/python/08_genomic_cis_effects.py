@@ -1,3 +1,18 @@
+"""Step 08 - Do DNA alterations reach the protein?
+
+1. Copy-number dosage: for every gene, Spearman correlation of its copy number
+   with its own mRNA and with its own protein across matched tumours. The drop
+   from the CN-mRNA to the CN-protein correlation ("attenuation") measures how
+   much protein levels are buffered against gene dosage; members of stable
+   multi-protein complexes are expected to be buffered most.
+2. Driver genes: mRNA and protein of KRAS, TP53, CDKN2A and SMAD4 by
+   alteration status (somatic mutation class from WXS; homozygous deletion
+   = ASCAT absolute copy number 0).
+
+Outputs: results/tables/cis_cn_*.tsv, cis_driver_*.tsv; results/figures/Fig7_genomic_cis.*
+
+    python scripts/python/08_genomic_cis_effects.py
+"""
 from __future__ import annotations
 
 import sys
