@@ -23,7 +23,7 @@ register(SnowParam(workers = 6))
 set.seed(CFG$survival$seed)
 FDR <- CFG$filters$fdr
 LFC_RNA <- CFG$filters$lfc_threshold      # |log2FC| > 1 for mRNA
-LFC_PROT <- CFG$filters$lfc_threshold
+LFC_PROT <- 0.5                            # TMT ratio compression: protein fold changes are smaller
 
 an <- fread(path_proc("analysis_samples.tsv"))
 genes <- read_genes()
