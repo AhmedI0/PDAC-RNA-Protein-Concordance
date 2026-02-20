@@ -1,0 +1,10 @@
+metric	value
+"RNA genes tested"	16782
+"RNA up"	1266
+"RNA down"	1259
+"proteins tested"	9487
+"protein up"	1229
+"protein down"	1269
+"genes in both layers"	9213
+"Spearman rho of fold changes"	0.398
+"Spearman rho of fold changes (matched samples)"	0.494
