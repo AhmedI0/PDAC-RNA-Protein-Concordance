@@ -1,0 +1,4 @@
+set	n_sets	spearman_NES
+"Hallmark"	50	0.303817527010804
+"Reactome, all"	1116	0.0387287603912605
+"Reactome, <25% complex machinery"	1008	0.123462865053871
