@@ -1,3 +1,16 @@
+# Step 10 - Pathway-level view of tumour vs normal and of RNA-protein agreement.
+#
+# 1. Pre-ranked GSEA (fgsea, multilevel) on the DESeq2 Wald statistic and the
+#    limma moderated t of step 09: Hallmark (50) and Reactome (15-500 genes).
+# 2. GSVA (Hanzelmann et al. 2013) per-sample Hallmark scores in the matched
+#    tumours, computed separately from mRNA (VST) and protein (log2 ratios)
+#    restricted to the genes measured in both layers. The correlation of a
+#    pathway's mRNA score with its protein score across tumours is compared with
+#    the median gene-level correlation of its members: aggregation into pathways
+#    averages out gene-specific noise and post-transcriptional effects.
+#
+#   Rscript scripts/R/10_pathways.R
+
 source("R/utils.R")
 suppressPackageStartupMessages({
   library(fgsea)
