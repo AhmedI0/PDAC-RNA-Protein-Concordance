@@ -84,7 +84,8 @@ cc_call <- function(s, label) {
   z <- s$z
   z[is.na(z)] <- 0
   dir.create(file.path(ROOT, ".cache", "tmp", "cc"), showWarnings = FALSE, recursive = TRUE)
-  cc <- ConsensusClusterPlus(z, maxK = 2, reps = 1000, pItem = 0.8, pFeature = 1, clusterAlg = "hc",
+  # maxK = 3 because ConsensusClusterPlus' tracking plot fails for maxK = 2; k = 2 is used
+  cc <- ConsensusClusterPlus(z, maxK = 3, reps = 1000, pItem = 0.8, pFeature = 1, clusterAlg = "hc",
                              innerLinkage = "average", finalLinkage = "average", distance = "pearson",
                              seed = CFG$survival$seed, plot = NULL, verbose = FALSE)
   cl <- cc[[2]]$consensusClass
