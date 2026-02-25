@@ -24,6 +24,7 @@ suppressPackageStartupMessages({
   library(org.Hs.eg.db)
 })
 set.seed(CFG$survival$seed)
+pdf(NULL)   # ConsensusClusterPlus draws to the default device even with plot = NULL
 
 an <- fread(path_proc("analysis_samples.tsv"))
 T <- an[tissue == "Tumor" & matched == TRUE, sample_key]

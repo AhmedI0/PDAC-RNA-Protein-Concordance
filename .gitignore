@@ -12,6 +12,7 @@ logs/
 
 # --- R ---
 .Rhistory
+Rplots.pdf
 .RData
 .Rproj.user/
 .Renviron
