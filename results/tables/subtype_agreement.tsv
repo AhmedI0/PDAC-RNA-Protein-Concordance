@@ -1,0 +1,4 @@
+comparison	kappa	percent_agreement
+"Moffitt RNA vs Moffitt protein"	0.699646643109541	85.2941176470588
+"PurIST vs Moffitt RNA"	0.450538687561214	75.7352941176471
+"PurIST vs Moffitt protein"	0.378048780487805	71.3235294117647
