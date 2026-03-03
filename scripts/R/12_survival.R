@@ -141,7 +141,7 @@ pA <- kms[[2]]
 pB <- kms[[3]]
 
 fd <- cox_tab[model %in% c("purist", "moffitt_rna", "moffitt_protein", "score_rna", "score_protein", "concordance") &
-                grepl("purist|moffitt|score|rho_samplewise", term)]
+                grepl("purist|moffitt|score_rna|score_protein|rho_samplewise", term)]
 fd[, label := c(purist = "PurIST basal-like (mRNA)", moffitt_rna = "Moffitt basal-like (mRNA)",
                 moffitt_protein = "Moffitt basal-like (protein)", score_rna = "Moffitt score, per SD (mRNA)",
                 score_protein = "Moffitt score, per SD (protein)", concordance = "Per-tumour RNA-protein rho, per SD")[model]]
