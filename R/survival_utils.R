@@ -18,6 +18,7 @@ survival_table <- function(an, cases, max_days = CFG$survival$max_followup_days)
   d[, grade := factor(fcase(tumor_grade %in% c("G1", "G2"), "G1-G2", tumor_grade %in% c("G3", "G4"), "G3-G4",
                             default = "unknown"), levels = c("G1-G2", "G3-G4", "unknown"))]
   d[, sex := factor(sex)]
+  for (v in c("stage", "margin", "grade")) d[, (v) := droplevels(get(v))]   # no empty levels in Cox models
   d[]
 }
 
