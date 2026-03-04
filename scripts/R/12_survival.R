@@ -147,7 +147,7 @@ fd[, label := c(purist = "PurIST basal-like (mRNA)", moffitt_rna = "Moffitt basa
                 score_protein = "Moffitt score, per SD (protein)", concordance = "Per-tumour RNA-protein rho, per SD")[model]]
 fd[, label := factor(label, levels = rev(label))]
 pC <- ggplot(fd, aes(HR, label)) + geom_vline(xintercept = 1, linetype = 2, linewidth = 0.3) +
-  geom_errorbarh(aes(xmin = lower, xmax = upper), height = 0.2, linewidth = 0.4) + geom_point(size = 1.6, colour = "#B2182B") +
+  geom_errorbar(aes(xmin = lower, xmax = upper), width = 0.2, linewidth = 0.4, orientation = "y") + geom_point(size = 1.6, colour = "#B2182B") +
   geom_text(aes(x = max(upper) * 1.05, label = sprintf("%.2f (%.2f-%.2f)  p=%.2g", HR, lower, upper, p)), hjust = 0, size = 2.1) +
   scale_x_log10() + coord_cartesian(xlim = c(min(fd$lower) * 0.9, max(fd$upper) * 4.5)) +
   labs(title = "Adjusted Cox models", subtitle = "age, stage, margin, grade", x = "Hazard ratio (log scale)", y = NULL) +
