@@ -16,6 +16,9 @@ proj_root <- function() {
   d
 }
 
+# batch runs: plots go only to files written by save_fig(), never to a stray Rplots.pdf
+if (!interactive()) pdf(NULL)
+
 ROOT <- proj_root()
 CFG  <- yaml::read_yaml(file.path(ROOT, "config", "config.yaml"))
 path_proc <- function(...) file.path(ROOT, CFG$paths$processed, ...)
