@@ -89,7 +89,7 @@ fit_predict <- function(model, train, test, inner_seed) {
 
 jobs <- expand.grid(model = names(MODELS), rep = seq_len(N_REP), stringsAsFactors = FALSE)
 cl <- makeCluster(min(10, detectCores() - 2))
-clusterExport(cl, c("MODELS", "y", "fold_ids", "fit_predict", "K", "ALPHA", "SEED"))
+clusterExport(cl, c("MODELS", "y", "fold_ids", "fit_predict", "jobs", "K", "ALPHA", "SEED"))
 log_step(sprintf("CV: %d models x %d repeats x %d folds on %d workers", length(MODELS), N_REP, K, length(cl)))
 res <- parLapply(cl, seq_len(nrow(jobs)), function(j) {
   model <- jobs$model[j]; r <- jobs$rep[j]; f <- fold_ids[[r]]
