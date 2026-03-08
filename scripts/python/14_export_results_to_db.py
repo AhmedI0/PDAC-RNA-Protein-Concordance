@@ -1,3 +1,12 @@
+"""Step 14 - Load QC flags and every results table into the SQLite database.
+
+Adds to db/cancer_proteogenomics.sqlite:
+  sample_qc            per-sample QC (tissue identity scores, duodenal flag, analysis set)
+  res_<table>          one table per results/tables/*.tsv
+  results_index        what each res_ table contains and which step wrote it
+
+    python scripts/python/14_export_results_to_db.py
+"""
 from __future__ import annotations
 
 import sqlite3
