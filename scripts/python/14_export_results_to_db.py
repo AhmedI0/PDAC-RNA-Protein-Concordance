@@ -79,6 +79,9 @@ def main() -> None:
         index.append({"table": f"res_{name}", "source_file": f"results/tables/{f.name}", "step": step,
                       "description": desc, "rows": len(df), "columns": df.shape[1]})
     pd.DataFrame(index).to_sql("results_index", con, if_exists="replace", index=False)
+    con.execute("CREATE INDEX IF NOT EXISTS ix_conc_gene ON res_concordance_gene(gene)")
+    con.execute("CREATE INDEX IF NOT EXISTS ix_de_rna_gene ON res_de_rna_tumour_vs_normal(gene)")
+    con.execute("CREATE INDEX IF NOT EXISTS ix_de_prot_gene ON res_de_protein_tumour_vs_normal(gene)")
     con.commit()
     con.execute("VACUUM")
     con.close()
