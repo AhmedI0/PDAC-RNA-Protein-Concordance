@@ -73,3 +73,75 @@ schema (`db/schema.sql`); analysis results are added in step 14.
 * **Purity**: ESTIMATE stromal and immune scores from RNA [yoshihara2013]
   (tidyestimate implementation); neoplastic cellularity as 2 x KRAS variant
   allele fraction (heterozygous, diploid assumption) in KRAS-mutant tumours.
+
+## 5. mRNA-protein concordance (step 07)
+
+On matched, QC-pass samples (136 tumours, 21 NATs) and 9,254 genes with both
+layers (protein quantified in >= 50% of tumours):
+
+* gene-wise Spearman correlation across tumours (BH-FDR [benjamini1995]),
+  across NATs, and across tumours + NATs pooled;
+* null distribution from 20 permutations of tumour labels in the protein
+  matrix;
+* partial Spearman correlation removing ESTIMATE stromal and immune scores and
+  the acinar marker score (rank-based residuals), to separate co-variation due
+  to tissue composition from gene-intrinsic coupling;
+* determinants: correlation of gene-wise rho with mRNA mean, mRNA SD, protein
+  SD and protein missingness;
+* sample-wise correlation of gene-centred (z-scored) profiles per tumour, and
+  its association with KRAS-based cellularity;
+* gene-set level: two-sided Mann-Whitney test of gene-wise rho inside vs
+  outside each Hallmark [liberzon2015], Reactome [gillespie2022] and selected
+  GO cellular-component complex set.
+
+## 6. Genomic alterations (step 08)
+
+For genes with a copy-number change (|log2 ratio| > 0.2) in >= 10 tumours,
+Spearman correlation of copy number with the gene's own mRNA and protein;
+attenuation = rho(CN, mRNA) - rho(CN, protein) [goncalves2017]; complex
+subunits (members of GO CC "complex" sets with <= 400 genes) compared with
+other genes. For *KRAS*, *TP53*, *CDKN2A* and *SMAD4*, mRNA and protein were
+compared between alteration classes (missense/in-frame, truncating,
+homozygous deletion) and wild type (Mann-Whitney, BH-FDR).
+
+## 7. Differential expression (step 09)
+
+* **mRNA**: DESeq2 Wald test, design `~ tissue`, all QC-pass PDAC RNA samples
+  (160 tumours, 42 NATs); log2 fold changes shrunk with apeglm [zhu2019].
+* **Protein**: limma [ritchie2015], design `~ tissue + plex`, patients as
+  random block via `duplicateCorrelation` [smyth2005] (some tumours and NATs
+  come from the same patient), robust empirical Bayes with intensity trend;
+  136 tumours, 66 NATs.
+* Significance: FDR < 5% and |log2FC| > 1 (mRNA) or > 0.5 (protein; TMT
+  ratios are compressed by co-isolation interference). Genes were classified
+  as concordant up/down, mRNA-only, protein-only or opposite. A sensitivity
+  analysis repeated both models on the identical matched samples.
+
+## 8. Pathways (step 10)
+
+* Pre-ranked GSEA (fgsea multilevel [korotkevich2016]) on the DESeq2 Wald
+  statistic and the limma moderated t, Hallmark and Reactome sets (15-500
+  genes). As a sensitivity analysis, Reactome sets in which >= 25% of genes are
+  ribosomal, proteasomal, spliceosomal or respiratory-chain subunits were
+  excluded before comparing normalised enrichment scores between layers.
+* GSVA [hanzelmann2013] per-tumour Hallmark scores from mRNA and from protein
+  over the same 9,254 genes (missing protein values set to the gene minimum
+  - 0.5 for this step only). Pathway-level concordance = Spearman correlation
+  of the mRNA and protein score of a pathway across tumours, compared with the
+  median gene-level rho of its members (paired Wilcoxon).
+
+## 9. Subtypes (step 11)
+
+* **PurIST** [rashid2020]: 8 weighted top-scoring gene pairs on log2(TPM+1);
+  probability >= 0.5 = basal-like. Model taken unchanged from the authors'
+  `pdacR` package (commit `5b044b2`).
+* **Moffitt** tumour-specific signatures [moffitt2015] (25 basal-like, 25
+  classical genes; renamed symbols mapped through org.Hs.eg.db aliases):
+  continuous score = mean z(basal) - mean z(classical) per layer; categorical
+  call per layer by consensus clustering (k = 2, hierarchical, Pearson
+  distance, 1,000 resamplings of 80% of tumours) [wilkerson2010].
+  Agreement: Cohen's kappa [cohen1960]; AUC of each score against PurIST.
+* **Unsupervised**: consensus k-means on the 1,500 most variable features of
+  each layer (features complete in all tumours), k = 2-6, k chosen by minimal
+  proportion of ambiguous clustering (PAC) [senbabaoglu2014]; layer agreement
+  by adjusted Rand index [hubert1985] at every k.
