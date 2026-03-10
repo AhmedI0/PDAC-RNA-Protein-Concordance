@@ -145,3 +145,25 @@ homozygous deletion) and wild type (Mann-Whitney, BH-FDR).
   each layer (features complete in all tumours), k = 2-6, k chosen by minimal
   proportion of ambiguous clustering (PAC) [senbabaoglu2014]; layer agreement
   by adjusted Rand index [hubert1985] at every k.
+
+## 10. Survival (steps 12-13)
+
+* Overall survival from diagnosis, administratively censored at 5 years;
+  133 matched tumours, 105 deaths. Cox models adjusted for age (per 10 years),
+  stage (I-II / III-IV / unknown), resection margin (R0 / R1-R2 / RX-unknown)
+  and grade (G1-G2 / G3-G4); proportional hazards checked with Schoenfeld
+  residuals [grambsch1994].
+* Gene-level Cox per SD of each gene in each layer, adjusted for stage.
+* Prognostic models: elastic-net Cox (alpha = 0.5) [friedman2010; simon2011]
+  on the 2,000 most variable genes per layer (z-scored), with clinical
+  covariates unpenalised where included; 50 x repeated 5-fold CV with the
+  penalty tuned by an inner 5-fold CV in each training set; Harrell's C on
+  held-out folds [harrell1996]. Signature genes = selected in >= 50% of the
+  250 training-fold fits. Out-of-fold risk groups = median split of each
+  tumour's mean out-of-fold risk rank.
+
+## 11. Software
+
+R 4.5.2 with Bioconductor 3.22 and CRAN packages frozen at the 15 Dec 2025
+Posit Package Manager snapshot (`renv.lock`); Python 3.12 (`envs/environment.yml`).
+Random seeds are fixed in `config/config.yaml`.
