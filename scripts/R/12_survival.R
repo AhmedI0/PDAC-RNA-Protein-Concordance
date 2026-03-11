@@ -114,7 +114,7 @@ km <- function(var, title, pal) {
   ggsurvfit(f, linewidth = 0.6) + add_censor_mark(size = 1.2) + add_risktable(risktable_stats = "n.risk", size = 2.2,
                                                                           theme = theme_risktable_default(axis.text.y.size = 6, plot.title.size = 6)) +
     scale_colour_manual(values = pal) + scale_x_continuous(breaks = seq(0, 60, 12)) +
-    annotate("text", x = 60, y = 0.95, hjust = 1, size = 2.4, label = sprintf("log-rank p = %.2g", p)) +
+    annotate("text", x = 0, y = 0.04, hjust = 0, size = 2.4, label = sprintf("log-rank p = %.2g", p)) +
     labs(title = title, x = "Months", y = "Overall survival") + theme_pub() + theme(legend.position = c(0.72, 0.75))
 }
 clpal <- function(n) setNames(RColorBrewer::brewer.pal(max(3, n), "Set2")[seq_len(n)], NULL)
@@ -159,10 +159,11 @@ pD <- ggplot(gw, aes(logHR_RNA, logHR_Protein)) +
   geom_point(data = gw[p_RNA < 0.01 & p_Protein < 0.01], size = 0.9, colour = "#B2182B") +
   ggrepel::geom_text_repel(data = gw[p_RNA < 0.01 & p_Protein < 0.01][order(p_RNA * p_Protein)][1:12], aes(label = gene),
                            size = 1.9, max.overlaps = 20, segment.size = 0.2) +
-  annotate("text", x = -Inf, y = Inf, hjust = -0.05, vjust = 1.2, size = 2.3,
-           label = sprintf("Spearman rho = %.2f\nred: p < 0.01 in both (n = %d)", hr_cor$estimate,
-                           gw[p_RNA < 0.01 & p_Protein < 0.01, .N])) +
-  labs(title = "Gene-level prognosis, stage-adjusted", x = "log HR per SD (mRNA)", y = "log HR per SD (protein)") + theme_pub()
+  labs(title = "Gene-level prognosis",
+       subtitle = sprintf("stage-adjusted; rho = %.2f\nred: p < 0.01 in both layers (n = %d)",
+                          hr_cor$estimate, gw[p_RNA < 0.01 & p_Protein < 0.01, .N]),
+       x = "log HR per SD (mRNA)", y = "log HR per SD (protein)") +
+  theme_pub() + theme(plot.subtitle = element_text(size = 6.5))
 
 # panels reused by Figure 8 (assembled in step 13 together with the prognostic models)
 saveRDS(list(km_rna = ggsurvfit_build(pA), km_protein = ggsurvfit_build(pB), forest = pC, gene_hr = pD, hr_bin = pHR),
