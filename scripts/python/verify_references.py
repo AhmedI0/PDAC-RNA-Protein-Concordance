@@ -1,3 +1,12 @@
+"""Verify every reference DOI against Crossref and build manuscript/references.bib.
+
+For each row of manuscript/references.tsv the DOI is resolved at api.crossref.org;
+the returned title must start with the expected text (case- and punctuation-
+insensitive). The BibTeX entry is generated from Crossref's own metadata, so no
+author list, journal or year is typed by hand.
+
+    python scripts/python/verify_references.py
+"""
 from __future__ import annotations
 
 import html
