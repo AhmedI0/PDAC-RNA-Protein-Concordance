@@ -10,6 +10,8 @@
 # most variable across tumours (outcome-blind filter), z-scored. Protein values
 # missing in a tumour are imputed with the gene's minimum - 0.5 (low abundance).
 # Pathway models use the 50 Hallmark GSVA scores of each layer.
+# Two low-dimensional comparators add the pre-specified Moffitt basal-minus-classical
+# score (step 11, computed without outcome) to the clinical model, unpenalised.
 #
 # Performance: Harrell's C on each held-out fold, averaged per repeat.
 # Signature: genes selected in >= 50% of the 250 training-fold fits (stability)
@@ -52,9 +54,16 @@ g_r <- t(zs(read_matrix("gsva_hallmark_rna.tsv.gz")[, T]));     colnames(g_r) <-
 g_p <- t(zs(read_matrix("gsva_hallmark_protein.tsv.gz")[, T])); colnames(g_p) <- paste0("gsvaProt_", colnames(g_p))
 X_cli <- model.matrix(as.formula(paste("~", CLIN_FORMULA)), sv)[, -1]
 y <- cbind(time = sv$time, status = sv$event)
+# pre-specified, outcome-blind Moffitt basal-minus-classical scores (step 11), one covariate each
+sub <- fread(path_tab("subtype_calls.tsv"))
+i <- match(T, sub$sample_key)
+X_mof_r <- cbind(X_cli, moffitt_score = as.numeric(scale(sub$score_rna[i])))
+X_mof_p <- cbind(X_cli, moffitt_score = as.numeric(scale(sub$score_protein[i])))
 
 MODELS <- list(
   `Clinical`               = list(X = X_cli, pen = FALSE),
+  `Clinical + Moffitt score (mRNA)`    = list(X = X_mof_r, pen = FALSE),
+  `Clinical + Moffitt score (protein)` = list(X = X_mof_p, pen = FALSE),
   `mRNA genes`             = list(X = X_rna, pen = TRUE),
   `Protein genes`          = list(X = X_pro, pen = TRUE),
   `mRNA + protein genes`   = list(X = cbind(X_rna, X_pro), pen = TRUE),
@@ -156,7 +165,8 @@ print(cox_risk[grepl("risk", term)])
 
 # ================================================================ figure 8
 P <- readRDS(file.path(ROOT, CFG$paths$interim, "fig8_panels.rds"))
-mcol <- c(Clinical = "grey55", `mRNA genes` = PAL$layer[["RNA"]], `Protein genes` = PAL$layer[["Protein"]],
+mcol <- c(Clinical = "grey55", `Clinical + Moffitt score (mRNA)` = "#F4A582", `Clinical + Moffitt score (protein)` = "#D6604D",
+          `mRNA genes` = PAL$layer[["RNA"]], `Protein genes` = PAL$layer[["Protein"]],
           `mRNA + protein genes` = "#5E3C99", `Clinical + mRNA` = "#A6DBA0", `Clinical + protein` = "#C2A5CF",
           `Clinical + mRNA pathways` = "#5AAE61", `Clinical + protein pathways` = "#9970AB")
 pE <- ggplot(perf, aes(cindex, reorder(model, cindex, median), fill = model)) +
