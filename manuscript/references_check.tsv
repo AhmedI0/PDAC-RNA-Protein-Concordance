@@ -1,0 +1,35 @@
+key	doi	title_ok	year	journal	first_author
+cao2021	10.1016/j.cell.2021.08.023	True	2021	Cell	Cao
+li2023	10.1016/j.ccell.2023.06.009	True	2023	Cancer Cell	Li
+rudnick2016	10.1021/acs.jproteome.5b01091	True	2016	Journal of Proteome Research	Rudnick
+grossman2016	10.1056/NEJMp1607591	True	2016	New England Journal of Medicine	Grossman
+dobin2013	10.1093/bioinformatics/bts635	True	2012	Bioinformatics	Dobin
+vanloo2010	10.1073/pnas.1009843107	True	2010	Proceedings of the National Academy of Sciences	Van Loo
+moffitt2015	10.1038/ng.3398	True	2015	Nature Genetics	Moffitt
+collisson2011	10.1038/nm.2344	True	2011	Nature Medicine	Collisson
+bailey2016	10.1038/nature16965	True	2016	Nature	Bailey
+rashid2020	10.1158/1078-0432.CCR-19-1467	True	2020	Clinical Cancer Research	Rashid
+yoshihara2013	10.1038/ncomms3612	True	2013	Nature Communications	Yoshihara
+love2014	10.1186/s13059-014-0550-8	True	2014	Genome Biology	Love
+zhu2019	10.1093/bioinformatics/bty895	True	2018	Bioinformatics	Zhu
+ritchie2015	10.1093/nar/gkv007	True	2015	Nucleic Acids Research	Ritchie
+smyth2005	10.1093/bioinformatics/bti270	True	2005	Bioinformatics	Smyth
+benjamini1995	10.1111/j.2517-6161.1995.tb02031.x	True	1995	Journal of the Royal Statistical Society Series B: Statistical Methodology	Benjamini
+korotkevich2016	10.1101/060012	True	2016		Korotkevich
+hanzelmann2013	10.1186/1471-2105-14-7	True	2013	BMC Bioinformatics	Hänzelmann
+liberzon2015	10.1016/j.cels.2015.12.004	True	2015	Cell Systems	Liberzon
+gillespie2022	10.1093/nar/gkab1028	True	2021	Nucleic Acids Research	Gillespie
+wilkerson2010	10.1093/bioinformatics/btq170	True	2010	Bioinformatics	Wilkerson
+senbabaoglu2014	10.1038/srep06207	True	2014	Scientific Reports	Șenbabaoğlu
+hubert1985	10.1007/BF01908075	True	1985	Journal of Classification	Hubert
+cohen1960	10.1177/001316446002000104	True	1960	Educational and Psychological Measurement	Cohen
+friedman2010	10.18637/jss.v033.i01	True	2010	Journal of Statistical Software	Friedman
+simon2011	10.18637/jss.v039.i05	True	2011	Journal of Statistical Software	Simon
+harrell1996	10.1002/(SICI)1097-0258(19960229)15:4<361::AID-SIM168>3.0.CO;2-4	True	1996	Statistics in Medicine	HARRELL
+grambsch1994	10.1093/biomet/81.3.515	True	1994	Biometrika	GRAMBSCH
+schwanhausser2011	10.1038/nature10098	True	2011	Nature	Schwanhäusser
+liu2016	10.1016/j.cell.2016.03.014	True	2016	Cell	Liu
+goncalves2017	10.1016/j.cels.2017.08.013	True	2017	Cell Systems	Gonçalves
+arad2023	10.1016/j.mcpro.2023.100587	True	2023	Molecular & Cellular Proteomics	Arad
+ghoshdastider2023	10.1016/j.celrep.2023.113172	True	2023	Cell Reports	Ghoshdastider
+savage2024	10.1016/j.cell.2024.05.039	True	2024	Cell	Savage

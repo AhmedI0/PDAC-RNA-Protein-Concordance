@@ -1,0 +1,35 @@
+key	doi	title_starts	used_for
+cao2021	10.1016/j.cell.2021.08.023	Proteogenomic characterization of pancreatic ductal adenocarcinoma	CPTAC PDAC cohort, flagship study
+li2023	10.1016/j.ccell.2023.06.009	Proteogenomic data and resources for pan-cancer analysis	CPTAC harmonised resources
+rudnick2016	10.1021/acs.jproteome.5b01091	A Description of the Clinical Proteomic Tumor Analysis Consortium	PDC common data analysis pipeline (CDAP)
+grossman2016	10.1056/NEJMp1607591	Toward a Shared Vision for Cancer Genomic Data	Genomic Data Commons
+dobin2013	10.1093/bioinformatics/bts635	STAR: ultrafast universal RNA-seq aligner	GDC RNA-seq quantification
+vanloo2010	10.1073/pnas.1009843107	Allele-specific copy number analysis of tumors	ASCAT gene-level copy number
+moffitt2015	10.1038/ng.3398	Virtual microdissection identifies distinct tumor- and stroma-specific subtypes	Moffitt classical / basal-like signatures
+collisson2011	10.1038/nm.2344	Subtypes of pancreatic ductal adenocarcinoma and their differing responses to therapy	Collisson subtypes
+bailey2016	10.1038/nature16965	Genomic analyses identify molecular subtypes of pancreatic cancer	Bailey subtypes
+rashid2020	10.1158/1078-0432.CCR-19-1467	Purity Independent Subtyping of Tumors (PurIST)	PurIST single-sample classifier
+yoshihara2013	10.1038/ncomms3612	Inferring tumour purity and stromal and immune cell admixture from expression data	ESTIMATE
+love2014	10.1186/s13059-014-0550-8	Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2	DESeq2
+zhu2019	10.1093/bioinformatics/bty895	Heavy-tailed prior distributions for sequence count data	apeglm shrinkage
+ritchie2015	10.1093/nar/gkv007	limma powers differential expression analyses	limma
+smyth2005	10.1093/bioinformatics/bti270	Use of within-array replicate spots for assessing differential expression	duplicateCorrelation
+benjamini1995	10.1111/j.2517-6161.1995.tb02031.x	Controlling the False Discovery Rate	Benjamini-Hochberg FDR
+korotkevich2016	10.1101/060012	Fast gene set enrichment analysis	fgsea
+hanzelmann2013	10.1186/1471-2105-14-7	GSVA: gene set variation analysis	GSVA
+liberzon2015	10.1016/j.cels.2015.12.004	The Molecular Signatures Database Hallmark Gene Set Collection	MSigDB Hallmark
+gillespie2022	10.1093/nar/gkab1028	The reactome pathway knowledgebase 2022	Reactome
+wilkerson2010	10.1093/bioinformatics/btq170	ConsensusClusterPlus	consensus clustering
+senbabaoglu2014	10.1038/srep06207	Critical limitations of consensus clustering in class discovery	PAC criterion
+hubert1985	10.1007/BF01908075	Comparing partitions	adjusted Rand index
+cohen1960	10.1177/001316446002000104	A Coefficient of Agreement for Nominal Scales	Cohen's kappa
+friedman2010	10.18637/jss.v033.i01	Regularization Paths for Generalized Linear Models via Coordinate Descent	glmnet
+simon2011	10.18637/jss.v039.i05	Regularization Paths for Cox's Proportional Hazards Model via Coordinate Descent	glmnet Cox
+harrell1996	10.1002/(SICI)1097-0258(19960229)15:4<361::AID-SIM168>3.0.CO;2-4	MULTIVARIABLE PROGNOSTIC MODELS	Harrell's C, validation
+grambsch1994	10.1093/biomet/81.3.515	Proportional hazards tests and diagnostics based on weighted residuals	proportional-hazards check
+schwanhausser2011	10.1038/nature10098	Global quantification of mammalian gene expression control	mRNA-protein relationship
+liu2016	10.1016/j.cell.2016.03.014	On the Dependency of Cellular Protein Levels on mRNA Abundance	mRNA-protein relationship
+goncalves2017	10.1016/j.cels.2017.08.013	Widespread Post-transcriptional Attenuation of Genomic Copy-Number Variation in Cancer	dosage attenuation
+arad2023	10.1016/j.mcpro.2023.100587	Functional Impact of Protein	pan-cancer RNA-protein variation
+ghoshdastider2023	10.1016/j.celrep.2023.113172	Exploring the pan-cancer landscape of posttranscriptional regulation	post-transcriptional regulation and survival
+savage2024	10.1016/j.cell.2024.05.039	Pan-cancer proteogenomics expands the landscape of therapeutic targets	pan-cancer mRNA-protein correlation
