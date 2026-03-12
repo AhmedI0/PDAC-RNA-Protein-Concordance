@@ -179,10 +179,14 @@ f_r <- survfit2(Surv(time, event) ~ risk_protein, data = sv)
 pF <- ggsurvfit(f_r, linewidth = 0.6) + add_censor_mark(size = 1.2) +
   add_risktable(risktable_stats = "n.risk", size = 2.2, theme = theme_risktable_default(axis.text.y.size = 6, plot.title.size = 6)) +
   scale_colour_manual(values = c(`Low risk` = "#4393C3", `High risk` = "#B2182B")) + scale_x_continuous(breaks = seq(0, 60, 12)) +
-  annotate("text", x = 60, y = 0.95, hjust = 1, size = 2.4, label = sprintf("log-rank p = %.2g", lr_p("risk_protein"))) +
-  labs(title = "Protein signature, out-of-fold risk", x = "Months", y = "Overall survival") + theme_pub() +
+  annotate("text", x = 0, y = 0.04, hjust = 0, size = 2.4, label = sprintf("log-rank p = %.2g", lr_p("risk_protein"))) +
+  labs(title = "Protein model, out-of-fold", x = "Months", y = "Overall survival") + theme_pub() +
   theme(legend.position = c(0.72, 0.75))
 
-fig8 <- wrap_plots(list(P$km_rna, P$km_protein, P$forest, P$gene_hr, P$hr_bin, pE, wrap_elements(ggsurvfit_build(pF))),
-                   design = "AABBCCC\nDDDEEFF\nGGG####") + plot_annotation(tag_levels = "A")
-save_fig(fig8, "Fig8_survival", width = 210, height = 215)
+# KM panels are patchworks (curve + risk table): wrap them so each gets a single tag;
+# free() stops long axis labels of one row from shifting the panels of another
+fig8 <- wrap_plots(list(free(wrap_elements(P$km_rna)), free(wrap_elements(P$km_protein)), free(P$gene_hr),
+                        free(P$forest), free(P$hr_bin), free(pE), free(wrap_elements(ggsurvfit_build(pF)))),
+                   design = "AABBCC\nDDDEEE\nFFFFGG") + plot_annotation(tag_levels = "A") &
+  theme(plot.tag = element_text(face = "bold", size = 11))
+save_fig(fig8, "Fig8_survival", width = 210, height = 235)
