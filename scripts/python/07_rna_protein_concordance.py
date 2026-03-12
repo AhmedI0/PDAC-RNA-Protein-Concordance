@@ -146,7 +146,10 @@ def main() -> None:
 
     # ------------------------------------------------------------------ figure 3
     # two independent rows: the long Hallmark labels of panel D must not squeeze panel A
-    fig, axes = plt.subplots(2, 3, figsize=(7.6, 5.8))
+    fig = plt.figure(figsize=(7.6, 5.8))
+    top = fig.add_gridspec(1, 3, left=0.075, right=0.985, top=0.93, bottom=0.60, wspace=0.32)
+    bot = fig.add_gridspec(1, 3, left=0.19, right=0.985, top=0.44, bottom=0.075, wspace=0.92)
+    axes = np.array([[fig.add_subplot(top[0, i]) for i in range(3)], [fig.add_subplot(bot[0, i]) for i in range(3)]])
     bins = np.linspace(-1, 1, 61)
 
     ax = axes[0, 0]
@@ -225,7 +228,6 @@ def main() -> None:
     ax.set_title("Per-tumour agreement")
     panel_label(ax, "F", x=-0.45, y=1.08)
 
-    fig.tight_layout()
     save_fig(fig, P.figures / "Fig3_concordance")
 
 
