@@ -153,7 +153,7 @@ def main() -> None:
     bins = np.linspace(-1, 1, 61)
 
     ax = axes[0, 0]
-    ax.hist(null, bins=bins, density=True, color="0.85", label="permuted samples")
+    ax.hist(null, bins=bins, density=True, color="0.85", label="permuted")
     ax.hist(gT.rho.dropna(), bins=bins, density=True, histtype="step", lw=1.2, color=TISSUE["Tumor"], label="tumours")
     ax.axvline(np.nanmedian(gT.rho), color=TISSUE["Tumor"], lw=0.8, ls="--")
     ax.set_xlabel("Gene-wise rho (mRNA vs protein)")
@@ -162,7 +162,7 @@ def main() -> None:
     ax.text(0.02, 0.98, f"median {np.nanmedian(gT.rho):.2f}\n{summ['frac_positive_fdr05']:.0%} positive, FDR<5%",
             transform=ax.transAxes, va="top", fontsize=6.5)
     ax.set_ylim(0, 5.6)
-    ax.legend(loc="upper right", fontsize=5.8)
+    ax.legend(loc="upper right", bbox_to_anchor=(1.0, 1.0), fontsize=5.8, handlelength=1.2, frameon=False)
     panel_label(ax, "A", x=-0.22, y=1.08)
 
     ax = axes[0, 1]
