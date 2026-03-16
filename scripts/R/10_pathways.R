@@ -129,9 +129,9 @@ pA <- ggplot(hw, aes(NES_RNA, NES_Protein, colour = sig)) +
   scale_colour_manual(values = c(`both, same direction` = "#B2182B", `RNA only` = PAL$layer[["RNA"]],
                                  `protein only` = PAL$layer[["Protein"]], `both, opposite` = "#E08214", neither = "grey70"),
                       drop = FALSE) +
-  annotate("text", x = -Inf, y = -Inf, hjust = -0.1, vjust = -0.6, size = 2.3,
-           label = sprintf("Spearman rho = %.2f", nes_sum[set == "Hallmark", spearman_NES])) +
-  labs(title = "Hallmark GSEA, tumour vs normal", x = "NES (mRNA)", y = "NES (protein)", colour = "FDR < 5%") +
+  labs(title = "Hallmark GSEA, tumour vs normal",
+       subtitle = sprintf("Spearman rho = %.2f", nes_sum[set == "Hallmark", spearman_NES]),
+       x = "NES (mRNA)", y = "NES (protein)", colour = "FDR < 5%") +
   guides(colour = guide_legend(nrow = 2, override.aes = list(size = 1.6))) +
   theme_pub() + theme(legend.position = "bottom", legend.text = element_text(size = 5.5),
                       legend.title = element_text(size = 6), legend.margin = margin(0, 0, 0, 0))
@@ -154,7 +154,8 @@ pw[, label := pretty(pathway)]
 pC <- ggplot(pw, aes(median_rho_genes, rho_pathway)) +
   geom_abline(linetype = 3, linewidth = 0.3) +
   geom_point(size = 1.3, colour = PAL$layer[["Protein"]]) +
-  geom_text_repel(data = pw[order(-gain)][c(1:6, (.N - 2):.N)], aes(label = label), size = 1.9, max.overlaps = 20, segment.size = 0.2) +
+  geom_text_repel(data = pw[order(-gain)][c(1:6, (.N - 2):.N)], aes(label = label), size = 1.9, max.overlaps = Inf,
+                  box.padding = 0.4, point.padding = 0.15, min.segment.length = 0, segment.size = 0.2, seed = 1) +
   labs(title = "Pathway vs gene-level agreement", x = "Median gene-level rho (members)",
        y = "Pathway-score rho (GSVA mRNA vs protein)") +
   coord_cartesian(xlim = c(0, 1), ylim = c(-0.1, 1)) + theme_pub()
