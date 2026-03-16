@@ -178,7 +178,7 @@ def main() -> None:
     ax.set_xticklabels([f"other genes\n(n={len(d0)})", f"complex subunits\n(n={len(d1)})"])
     ax.set_ylabel("Attenuation\n(rho CN-mRNA - rho CN-protein)", fontsize=7)
     ax.set_title("Protein buffering of dosage")
-    ax.text(0.5, 0.03, f"Mann-Whitney p = {mw.pvalue:.1g}", transform=ax.transAxes, ha="center", va="bottom", fontsize=6.5)
+    ax.text(0.5, 0.97, f"Mann-Whitney\np = {mw.pvalue:.1g}", transform=ax.transAxes, ha="center", va="top", fontsize=6.5)
     panel_label(ax, "B", x=-0.3)
 
     order = ["WT", "missense/inframe", "truncating", "homdel"]
