@@ -1,0 +1,501 @@
+model	rep	cindex
+"Clinical"	1	0.576972890811849
+"Clinical + Moffitt score (mRNA)"	1	0.579990768300506
+"Clinical + Moffitt score (protein)"	1	0.566402125524274
+"mRNA genes"	1	0.564904727906313
+"Protein genes"	1	0.595922773633311
+"mRNA + protein genes"	1	0.575457830993268
+"Clinical + mRNA"	1	0.579120057783995
+"Clinical + protein"	1	0.574261026405069
+"Clinical + mRNA pathways"	1	0.572050905864165
+"Clinical + protein pathways"	1	0.577650856913544
+"Clinical"	2	0.624908933952464
+"Clinical + Moffitt score (mRNA)"	2	0.63135343190497
+"Clinical + Moffitt score (protein)"	2	0.626148694375417
+"mRNA genes"	2	0.595365171546221
+"Protein genes"	2	0.565361515962971
+"mRNA + protein genes"	2	0.58522741818166
+"Clinical + mRNA"	2	0.635140634259716
+"Clinical + protein"	2	0.628345360069302
+"Clinical + mRNA pathways"	2	0.631407128898312
+"Clinical + protein pathways"	2	0.624908933952464
+"Clinical"	3	0.624612298482436
+"Clinical + Moffitt score (mRNA)"	3	0.640766153392664
+"Clinical + Moffitt score (protein)"	3	0.636889350100848
+"mRNA genes"	3	0.590697626397261
+"Protein genes"	3	0.544283037490634
+"mRNA + protein genes"	3	0.592128675564979
+"Clinical + mRNA"	3	0.623012298482436
+"Clinical + protein"	3	0.62617858200734
+"Clinical + mRNA pathways"	3	0.626685919834852
+"Clinical + protein pathways"	3	0.625412298482436
+"Clinical"	4	0.630742757652301
+"Clinical + Moffitt score (mRNA)"	4	0.66321969594043
+"Clinical + Moffitt score (protein)"	4	0.654611758498215
+"mRNA genes"	4	0.566298254591397
+"Protein genes"	4	0.589880279642483
+"mRNA + protein genes"	4	0.564296247835046
+"Clinical + mRNA"	4	0.630742757652301
+"Clinical + protein"	4	0.629891693822513
+"Clinical + mRNA pathways"	4	0.630031013880059
+"Clinical + protein pathways"	4	0.624108271309485
+"Clinical"	5	0.63733114223322
+"Clinical + Moffitt score (mRNA)"	5	0.649401564543248
+"Clinical + Moffitt score (protein)"	5	0.64539781861136
+"mRNA genes"	5	0.601133879649824
+"Protein genes"	5	0.552368624896705
+"mRNA + protein genes"	5	0.603948710614022
+"Clinical + mRNA"	5	0.635922691528995
+"Clinical + protein"	5	0.635092336263071
+"Clinical + mRNA pathways"	5	0.642055551682039
+"Clinical + protein pathways"	5	0.63733114223322
+"Clinical"	6	0.61533469700795
+"Clinical + Moffitt score (mRNA)"	6	0.622244300763634
+"Clinical + Moffitt score (protein)"	6	0.622861611368916
+"mRNA genes"	6	0.579744561058798
+"Protein genes"	6	0.576395836658787
+"mRNA + protein genes"	6	0.578511093202239
+"Clinical + mRNA"	6	0.61533469700795
+"Clinical + protein"	6	0.61533469700795
+"Clinical + mRNA pathways"	6	0.604550487651993
+"Clinical + protein pathways"	6	0.599608201281454
+"Clinical"	7	0.620666106606134
+"Clinical + Moffitt score (mRNA)"	7	0.639348393740402
+"Clinical + Moffitt score (protein)"	7	0.631258120597907
+"mRNA genes"	7	0.595749342025676
+"Protein genes"	7	0.569596426986835
+"mRNA + protein genes"	7	0.573442721498511
+"Clinical + mRNA"	7	0.620666106606134
+"Clinical + protein"	7	0.61917911775855
+"Clinical + mRNA pathways"	7	0.617692128910967
+"Clinical + protein pathways"	7	0.620666106606134
+"Clinical"	8	0.604559878949805
+"Clinical + Moffitt score (mRNA)"	8	0.634885914756859
+"Clinical + Moffitt score (protein)"	8	0.617533771249673
+"mRNA genes"	8	0.577069061572412
+"Protein genes"	8	0.554835867223836
+"mRNA + protein genes"	8	0.552378202349795
+"Clinical + mRNA"	8	0.60011543450536
+"Clinical + protein"	8	0.59013545452538
+"Clinical + mRNA pathways"	8	0.594879163751848
+"Clinical + protein pathways"	8	0.604559878949805
+"Clinical"	9	0.632162539529617
+"Clinical + Moffitt score (mRNA)"	9	0.649311524650464
+"Clinical + Moffitt score (protein)"	9	0.625497986868714
+"mRNA genes"	9	0.580773949095474
+"Protein genes"	9	0.564047341497575
+"mRNA + protein genes"	9	0.584962862294115
+"Clinical + mRNA"	9	0.635147614156483
+"Clinical + protein"	9	0.63494999597561
+"Clinical + mRNA pathways"	9	0.624480098370031
+"Clinical + protein pathways"	9	0.625193898414635
+"Clinical"	10	0.623963731978599
+"Clinical + Moffitt score (mRNA)"	10	0.60925148201702
+"Clinical + Moffitt score (protein)"	10	0.621679276277641
+"mRNA genes"	10	0.509156883789223
+"Protein genes"	10	0.534730467735868
+"mRNA + protein genes"	10	0.521135875122921
+"Clinical + mRNA"	10	0.596487693639941
+"Clinical + protein"	10	0.623963731978599
+"Clinical + mRNA pathways"	10	0.575432992753206
+"Clinical + protein pathways"	10	0.609906223991378
+"Clinical"	11	0.628067964202928
+"Clinical + Moffitt score (mRNA)"	11	0.635256988594898
+"Clinical + Moffitt score (protein)"	11	0.631982828857194
+"mRNA genes"	11	0.540719993986954
+"Protein genes"	11	0.507426018376081
+"mRNA + protein genes"	11	0.492386730837301
+"Clinical + mRNA"	11	0.608809922891654
+"Clinical + protein"	11	0.627392288527252
+"Clinical + mRNA pathways"	11	0.622410786112289
+"Clinical + protein pathways"	11	0.619004575719387
+"Clinical"	12	0.594006498623062
+"Clinical + Moffitt score (mRNA)"	12	0.630100947569895
+"Clinical + Moffitt score (protein)"	12	0.614600144371478
+"mRNA genes"	12	0.552677279865274
+"Protein genes"	12	0.575269543016434
+"mRNA + protein genes"	12	0.567816282638207
+"Clinical + mRNA"	12	0.603695079937941
+"Clinical + protein"	12	0.605771204505415
+"Clinical + mRNA pathways"	12	0.591522362604217
+"Clinical + protein pathways"	12	0.605651528151901
+"Clinical"	13	0.611645272555372
+"Clinical + Moffitt score (mRNA)"	13	0.623032246250892
+"Clinical + Moffitt score (protein)"	13	0.611707007178705
+"mRNA genes"	13	0.548521545458282
+"Protein genes"	13	0.557560884464325
+"mRNA + protein genes"	13	0.541786118678461
+"Clinical + mRNA"	13	0.60207790072385
+"Clinical + protein"	13	0.612318673228773
+"Clinical + mRNA pathways"	13	0.61215604061331
+"Clinical + protein pathways"	13	0.611645272555372
+"Clinical"	14	0.641716964442763
+"Clinical + Moffitt score (mRNA)"	14	0.649169043554446
+"Clinical + Moffitt score (protein)"	14	0.639147607456235
+"mRNA genes"	14	0.567365093549766
+"Protein genes"	14	0.545872870433173
+"mRNA + protein genes"	14	0.538541146429622
+"Clinical + mRNA"	14	0.641716964442763
+"Clinical + protein"	14	0.643115565841364
+"Clinical + mRNA pathways"	14	0.646835845561644
+"Clinical + protein pathways"	14	0.646080600806399
+"Clinical"	15	0.618332395400737
+"Clinical + Moffitt score (mRNA)"	15	0.640416908785723
+"Clinical + Moffitt score (protein)"	15	0.633688196673337
+"mRNA genes"	15	0.606500051218999
+"Protein genes"	15	0.569517196435995
+"mRNA + protein genes"	15	0.578506423043721
+"Clinical + mRNA"	15	0.618332395400737
+"Clinical + protein"	15	0.619089971158313
+"Clinical + mRNA pathways"	15	0.611926701450559
+"Clinical + protein pathways"	15	0.614358885466962
+"Clinical"	16	0.613350490306361
+"Clinical + Moffitt score (mRNA)"	16	0.630945112137129
+"Clinical + Moffitt score (protein)"	16	0.625297077638177
+"mRNA genes"	16	0.592677664640584
+"Protein genes"	16	0.585400107965071
+"mRNA + protein genes"	16	0.595395118369361
+"Clinical + mRNA"	16	0.609582670787134
+"Clinical + protein"	16	0.613350490306361
+"Clinical + mRNA pathways"	16	0.623737962434291
+"Clinical + protein pathways"	16	0.609211596127475
+"Clinical"	17	0.612785653675293
+"Clinical + Moffitt score (mRNA)"	17	0.633470017553339
+"Clinical + Moffitt score (protein)"	17	0.618224162701227
+"mRNA genes"	17	0.571457337879968
+"Protein genes"	17	0.579697135226852
+"mRNA + protein genes"	17	0.567351125682274
+"Clinical + mRNA"	17	0.613531922332009
+"Clinical + protein"	17	0.602429666620277
+"Clinical + mRNA pathways"	17	0.612396473164853
+"Clinical + protein pathways"	17	0.603216341564261
+"Clinical"	18	0.622661386878208
+"Clinical + Moffitt score (mRNA)"	18	0.628219134890467
+"Clinical + Moffitt score (protein)"	18	0.62111537382946
+"mRNA genes"	18	0.568939686801374
+"Protein genes"	18	0.607467624007896
+"mRNA + protein genes"	18	0.571013963875651
+"Clinical + mRNA"	18	0.622661386878208
+"Clinical + protein"	18	0.622661386878208
+"Clinical + mRNA pathways"	18	0.622661386878208
+"Clinical + protein pathways"	18	0.623399394258282
+"Clinical"	19	0.638125142513069
+"Clinical + Moffitt score (mRNA)"	19	0.639188061505984
+"Clinical + Moffitt score (protein)"	19	0.622560353352428
+"mRNA genes"	19	0.498736263736264
+"Protein genes"	19	0.544910714627531
+"mRNA + protein genes"	19	0.51301111644042
+"Clinical + mRNA"	19	0.63375198325762
+"Clinical + protein"	19	0.638125142513069
+"Clinical + mRNA pathways"	19	0.623112763322625
+"Clinical + protein pathways"	19	0.637403120852419
+"Clinical"	20	0.620927760801371
+"Clinical + Moffitt score (mRNA)"	20	0.635934582761355
+"Clinical + Moffitt score (protein)"	20	0.63914344489597
+"mRNA genes"	20	0.55179355771558
+"Protein genes"	20	0.545632271815582
+"mRNA + protein genes"	20	0.517637112849479
+"Clinical + mRNA"	20	0.620130948052367
+"Clinical + protein"	20	0.610541906956477
+"Clinical + mRNA pathways"	20	0.624135027972454
+"Clinical + protein pathways"	20	0.605747386408532
+"Clinical"	21	0.631159399922913
+"Clinical + Moffitt score (mRNA)"	21	0.638815546782721
+"Clinical + Moffitt score (protein)"	21	0.626447881623747
+"mRNA genes"	21	0.538491013625451
+"Protein genes"	21	0.554502696516894
+"mRNA + protein genes"	21	0.541898497208871
+"Clinical + mRNA"	21	0.631159399922913
+"Clinical + protein"	21	0.637244371135937
+"Clinical + mRNA pathways"	21	0.627699192310457
+"Clinical + protein pathways"	21	0.631159399922913
+"Clinical"	22	0.630442550881339
+"Clinical + Moffitt score (mRNA)"	22	0.645652236221282
+"Clinical + Moffitt score (protein)"	22	0.6482528431567
+"mRNA genes"	22	0.527190590888126
+"Protein genes"	22	0.600441288898639
+"mRNA + protein genes"	22	0.534399313766402
+"Clinical + mRNA"	22	0.616382180871602
+"Clinical + protein"	22	0.632547814039234
+"Clinical + mRNA pathways"	22	0.628837979569905
+"Clinical + protein pathways"	22	0.630442550881339
+"Clinical"	23	0.569203648322788
+"Clinical + Moffitt score (mRNA)"	23	0.603846060295457
+"Clinical + Moffitt score (protein)"	23	0.591557672304039
+"mRNA genes"	23	0.561577155869509
+"Protein genes"	23	0.558694969567942
+"mRNA + protein genes"	23	0.548272629788114
+"Clinical + mRNA"	23	0.572144824793376
+"Clinical + protein"	23	0.569905402708753
+"Clinical + mRNA pathways"	23	0.564170910846172
+"Clinical + protein pathways"	23	0.569232228659516
+"Clinical"	24	0.621164022357199
+"Clinical + Moffitt score (mRNA)"	24	0.611599043795446
+"Clinical + Moffitt score (protein)"	24	0.617360980047737
+"mRNA genes"	24	0.571389142660163
+"Protein genes"	24	0.566981213725851
+"mRNA + protein genes"	24	0.559711189295479
+"Clinical + mRNA"	24	0.623004513154745
+"Clinical + protein"	24	0.619497355690532
+"Clinical + mRNA pathways"	24	0.622870814202028
+"Clinical + protein pathways"	24	0.6218374230306
+"Clinical"	25	0.5860479389828
+"Clinical + Moffitt score (mRNA)"	25	0.601062891729334
+"Clinical + Moffitt score (protein)"	25	0.603588982440791
+"mRNA genes"	25	0.574973283127488
+"Protein genes"	25	0.583415577623946
+"mRNA + protein genes"	25	0.577682871838002
+"Clinical + mRNA"	25	0.5836479389828
+"Clinical + protein"	25	0.585358283810387
+"Clinical + mRNA pathways"	25	0.5860479389828
+"Clinical + protein pathways"	25	0.5860479389828
+"Clinical"	26	0.600194150003991
+"Clinical + Moffitt score (mRNA)"	26	0.610704987726679
+"Clinical + Moffitt score (protein)"	26	0.609075659446879
+"mRNA genes"	26	0.490778586902618
+"Protein genes"	26	0.515575806015082
+"mRNA + protein genes"	26	0.505963621596697
+"Clinical + mRNA"	26	0.603572528382369
+"Clinical + protein"	26	0.595473520283361
+"Clinical + mRNA pathways"	26	0.593446493256334
+"Clinical + protein pathways"	26	0.600869825679667
+"Clinical"	27	0.608517054157448
+"Clinical + Moffitt score (mRNA)"	27	0.630506785539584
+"Clinical + Moffitt score (protein)"	27	0.611003935827588
+"mRNA genes"	27	0.545821515059976
+"Protein genes"	27	0.555057991069686
+"mRNA + protein genes"	27	0.558046812947479
+"Clinical + mRNA"	27	0.598928013061558
+"Clinical + protein"	27	0.6064622596369
+"Clinical + mRNA pathways"	27	0.615399645250566
+"Clinical + protein pathways"	27	0.608517054157448
+"Clinical"	28	0.63991220133378
+"Clinical + Moffitt score (mRNA)"	28	0.648429256321575
+"Clinical + Moffitt score (protein)"	28	0.634330223589585
+"mRNA genes"	28	0.584457637532218
+"Protein genes"	28	0.544819244624889
+"mRNA + protein genes"	28	0.541854000584332
+"Clinical + mRNA"	28	0.627777979005944
+"Clinical + protein"	28	0.626863562638727
+"Clinical + mRNA pathways"	28	0.63991220133378
+"Clinical + protein pathways"	28	0.63991220133378
+"Clinical"	29	0.635574706944249
+"Clinical + Moffitt score (mRNA)"	29	0.642680482651208
+"Clinical + Moffitt score (protein)"	29	0.634735697159814
+"mRNA genes"	29	0.577936405401981
+"Protein genes"	29	0.586703731262933
+"mRNA + protein genes"	29	0.570798411902745
+"Clinical + mRNA"	29	0.627632468677101
+"Clinical + protein"	29	0.623331172378425
+"Clinical + mRNA pathways"	29	0.625466403695151
+"Clinical + protein pathways"	29	0.635574706944249
+"Clinical"	30	0.62935274649597
+"Clinical + Moffitt score (mRNA)"	30	0.631091047350557
+"Clinical + Moffitt score (protein)"	30	0.619332768116781
+"mRNA genes"	30	0.566064834623744
+"Protein genes"	30	0.578676640902483
+"mRNA + protein genes"	30	0.551140897119474
+"Clinical + mRNA"	30	0.636678251179965
+"Clinical + protein"	30	0.628653445796669
+"Clinical + mRNA pathways"	30	0.64047135631488
+"Clinical + protein pathways"	30	0.617166366567654
+"Clinical"	31	0.643842150492016
+"Clinical + Moffitt score (mRNA)"	31	0.627796918164472
+"Clinical + Moffitt score (protein)"	31	0.627118749552709
+"mRNA genes"	31	0.554208456201777
+"Protein genes"	31	0.543144641684863
+"mRNA + protein genes"	31	0.565988163604168
+"Clinical + mRNA"	31	0.643842150492016
+"Clinical + protein"	31	0.638842150492016
+"Clinical + mRNA pathways"	31	0.626065657697472
+"Clinical + protein pathways"	31	0.635899912224867
+"Clinical"	32	0.633106728643702
+"Clinical + Moffitt score (mRNA)"	32	0.630453264356527
+"Clinical + Moffitt score (protein)"	32	0.62665719108235
+"mRNA genes"	32	0.561188061178149
+"Protein genes"	32	0.522111641249305
+"mRNA + protein genes"	32	0.512841378099113
+"Clinical + mRNA"	32	0.628694963937819
+"Clinical + protein"	32	0.633842022761349
+"Clinical + mRNA pathways"	32	0.62932928040253
+"Clinical + protein pathways"	32	0.633842022761349
+"Clinical"	33	0.616413209348855
+"Clinical + Moffitt score (mRNA)"	33	0.650353240331739
+"Clinical + Moffitt score (protein)"	33	0.631156115487776
+"mRNA genes"	33	0.524468627691358
+"Protein genes"	33	0.539694951462482
+"mRNA + protein genes"	33	0.532340383911031
+"Clinical + mRNA"	33	0.616413209348855
+"Clinical + protein"	33	0.619190987126633
+"Clinical + mRNA pathways"	33	0.616413209348855
+"Clinical + protein pathways"	33	0.618540868923323
+"Clinical"	34	0.623877650189117
+"Clinical + Moffitt score (mRNA)"	34	0.641220862709017
+"Clinical + Moffitt score (protein)"	34	0.635677392144529
+"mRNA genes"	34	0.597134877355093
+"Protein genes"	34	0.574067431994678
+"mRNA + protein genes"	34	0.585381347124211
+"Clinical + mRNA"	34	0.631122999307502
+"Clinical + protein"	34	0.623877650189117
+"Clinical + mRNA pathways"	34	0.629882377215068
+"Clinical + protein pathways"	34	0.623170936408198
+"Clinical"	35	0.632002582993659
+"Clinical + Moffitt score (mRNA)"	35	0.619052996770698
+"Clinical + Moffitt score (protein)"	35	0.627871425195343
+"mRNA genes"	35	0.571106084803234
+"Protein genes"	35	0.564441574737495
+"mRNA + protein genes"	35	0.584495596143843
+"Clinical + mRNA"	35	0.632002582993659
+"Clinical + protein"	35	0.632002582993659
+"Clinical + mRNA pathways"	35	0.618899134717797
+"Clinical + protein pathways"	35	0.632002582993659
+"Clinical"	36	0.604974005468564
+"Clinical + Moffitt score (mRNA)"	36	0.620752304719877
+"Clinical + Moffitt score (protein)"	36	0.612935799322846
+"mRNA genes"	36	0.575282388019542
+"Protein genes"	36	0.53895842051204
+"mRNA + protein genes"	36	0.56646517957312
+"Clinical + mRNA"	36	0.600850294128358
+"Clinical + protein"	36	0.604974005468564
+"Clinical + mRNA pathways"	36	0.610291022284962
+"Clinical + protein pathways"	36	0.604974005468564
+"Clinical"	37	0.614318719631338
+"Clinical + Moffitt score (mRNA)"	37	0.630483022572935
+"Clinical + Moffitt score (protein)"	37	0.621981183190782
+"mRNA genes"	37	0.553024563897751
+"Protein genes"	37	0.557458264831307
+"mRNA + protein genes"	37	0.560726135213994
+"Clinical + mRNA"	37	0.614318719631338
+"Clinical + protein"	37	0.616893826927476
+"Clinical + mRNA pathways"	37	0.614155085972391
+"Clinical + protein pathways"	37	0.614318719631338
+"Clinical"	38	0.625058589313266
+"Clinical + Moffitt score (mRNA)"	38	0.627478520210003
+"Clinical + Moffitt score (protein)"	38	0.622325318441653
+"mRNA genes"	38	0.554153800058393
+"Protein genes"	38	0.542359504692707
+"mRNA + protein genes"	38	0.536146124877694
+"Clinical + mRNA"	38	0.628477252703258
+"Clinical + protein"	38	0.628949639896923
+"Clinical + mRNA pathways"	38	0.623502169079803
+"Clinical + protein pathways"	38	0.625058589313266
+"Clinical"	39	0.627910078157939
+"Clinical + Moffitt score (mRNA)"	39	0.644590923214756
+"Clinical + Moffitt score (protein)"	39	0.621227422406099
+"mRNA genes"	39	0.575007296379965
+"Protein genes"	39	0.580205057735062
+"mRNA + protein genes"	39	0.542355388400034
+"Clinical + mRNA"	39	0.62857014416454
+"Clinical + protein"	39	0.623994661266734
+"Clinical + mRNA pathways"	39	0.598541792794682
+"Clinical + protein pathways"	39	0.620340978952735
+"Clinical"	40	0.623709031306693
+"Clinical + Moffitt score (mRNA)"	40	0.625206236106359
+"Clinical + Moffitt score (protein)"	40	0.614986400755653
+"mRNA genes"	40	0.555936379945088
+"Protein genes"	40	0.562478218788708
+"mRNA + protein genes"	40	0.583233788599272
+"Clinical + mRNA"	40	0.623709031306693
+"Clinical + protein"	40	0.623709031306693
+"Clinical + mRNA pathways"	40	0.62578520541895
+"Clinical + protein pathways"	40	0.623709031306693
+"Clinical"	41	0.628724572018605
+"Clinical + Moffitt score (mRNA)"	41	0.627207370384413
+"Clinical + Moffitt score (protein)"	41	0.618749220058102
+"mRNA genes"	41	0.515233879977145
+"Protein genes"	41	0.537850588892602
+"mRNA + protein genes"	41	0.517958571050904
+"Clinical + mRNA"	41	0.628724572018605
+"Clinical + protein"	41	0.628724572018605
+"Clinical + mRNA pathways"	41	0.628724572018605
+"Clinical + protein pathways"	41	0.628724572018605
+"Clinical"	42	0.640812836600646
+"Clinical + Moffitt score (mRNA)"	42	0.6233001233287
+"Clinical + Moffitt score (protein)"	42	0.62068852718327
+"mRNA genes"	42	0.541046441599947
+"Protein genes"	42	0.586111633990834
+"mRNA + protein genes"	42	0.545744850436469
+"Clinical + mRNA"	42	0.638590614378423
+"Clinical + protein"	42	0.640812836600646
+"Clinical + mRNA pathways"	42	0.634031597789332
+"Clinical + protein pathways"	42	0.640812836600646
+"Clinical"	43	0.633110785505327
+"Clinical + Moffitt score (mRNA)"	43	0.617790670243628
+"Clinical + Moffitt score (protein)"	43	0.621328923453663
+"mRNA genes"	43	0.520875732346593
+"Protein genes"	43	0.578827387747298
+"mRNA + protein genes"	43	0.53718854271476
+"Clinical + mRNA"	43	0.628840322871875
+"Clinical + protein"	43	0.628691846522036
+"Clinical + mRNA pathways"	43	0.608914021163185
+"Clinical + protein pathways"	43	0.651771976827042
+"Clinical"	44	0.603312238198019
+"Clinical + Moffitt score (mRNA)"	44	0.630226490785069
+"Clinical + Moffitt score (protein)"	44	0.621440839270301
+"mRNA genes"	44	0.545099134350785
+"Protein genes"	44	0.582195315744708
+"mRNA + protein genes"	44	0.587511854111267
+"Clinical + mRNA"	44	0.602603018339863
+"Clinical + protein"	44	0.603312238198019
+"Clinical + mRNA pathways"	44	0.603312238198019
+"Clinical + protein pathways"	44	0.603312238198019
+"Clinical"	45	0.648161858065437
+"Clinical + Moffitt score (mRNA)"	45	0.659319343645493
+"Clinical + Moffitt score (protein)"	45	0.655594431070618
+"mRNA genes"	45	0.562355388382032
+"Protein genes"	45	0.601942368245372
+"mRNA + protein genes"	45	0.592153159872018
+"Clinical + mRNA"	45	0.649732557907633
+"Clinical + protein"	45	0.646796670352127
+"Clinical + mRNA pathways"	45	0.639670690529901
+"Clinical + protein pathways"	45	0.645252767156346
+"Clinical"	46	0.591946813820446
+"Clinical + Moffitt score (mRNA)"	46	0.610141481296421
+"Clinical + Moffitt score (protein)"	46	0.586788050478543
+"mRNA genes"	46	0.563634950992341
+"Protein genes"	46	0.569894946112076
+"mRNA + protein genes"	46	0.565018173372964
+"Clinical + mRNA"	46	0.613269410915184
+"Clinical + protein"	46	0.591946813820446
+"Clinical + mRNA pathways"	46	0.596982785043468
+"Clinical + protein pathways"	46	0.589627925033762
+"Clinical"	47	0.648253632111884
+"Clinical + Moffitt score (mRNA)"	47	0.650984714926423
+"Clinical + Moffitt score (protein)"	47	0.653013933913389
+"mRNA genes"	47	0.530285621154708
+"Protein genes"	47	0.558566485000991
+"mRNA + protein genes"	47	0.523385079248666
+"Clinical + mRNA"	47	0.651545813181842
+"Clinical + protein"	47	0.646273434092082
+"Clinical + mRNA pathways"	47	0.629135916347567
+"Clinical + protein pathways"	47	0.648253632111884
+"Clinical"	48	0.628738279928471
+"Clinical + Moffitt score (mRNA)"	48	0.658501170423628
+"Clinical + Moffitt score (protein)"	48	0.642963384484774
+"mRNA genes"	48	0.542542683738697
+"Protein genes"	48	0.521256478399336
+"mRNA + protein genes"	48	0.551633144324174
+"Clinical + mRNA"	48	0.627377735710784
+"Clinical + protein"	48	0.628738279928471
+"Clinical + mRNA pathways"	48	0.631459368363845
+"Clinical + protein pathways"	48	0.630712227023492
+"Clinical"	49	0.613589332896095
+"Clinical + Moffitt score (mRNA)"	49	0.636185827738439
+"Clinical + Moffitt score (protein)"	49	0.636599986401221
+"mRNA genes"	49	0.608737398445046
+"Protein genes"	49	0.563979899295603
+"mRNA + protein genes"	49	0.590894773304476
+"Clinical + mRNA"	49	0.615012820440579
+"Clinical + protein"	49	0.613589332896095
+"Clinical + mRNA pathways"	49	0.619886249448402
+"Clinical + protein pathways"	49	0.615677463522011
+"Clinical"	50	0.653446407983796
+"Clinical + Moffitt score (mRNA)"	50	0.66023215731828
+"Clinical + Moffitt score (protein)"	50	0.646500640388372
+"mRNA genes"	50	0.574777629944855
+"Protein genes"	50	0.552542421042052
+"mRNA + protein genes"	50	0.577825145958491
+"Clinical + mRNA"	50	0.616245042796083
+"Clinical + protein"	50	0.616245042796083
+"Clinical + mRNA pathways"	50	0.608776163128033
+"Clinical + protein pathways"	50	0.609606038646705
