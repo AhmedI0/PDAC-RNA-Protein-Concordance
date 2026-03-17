@@ -1,0 +1,8 @@
+metric	value
+"genes tested"	9254
+"RNA p<0.01"	770
+"protein p<0.01"	298
+"both p<0.01, same direction"	114
+"RNA FDR<0.1"	650
+"protein FDR<0.1"	15
+"Spearman logHR RNA vs protein"	0.442
