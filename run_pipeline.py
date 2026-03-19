@@ -58,6 +58,8 @@ def main() -> None:
         steps = [s for s in STEPS if s[0] in a.only]
     elif a.start:
         steps = STEPS[[s[0] for s in STEPS].index(a.start):]
+    if any(s[1] == "r" for s in steps) and not (Path(RSCRIPT).is_file() or shutil.which(RSCRIPT)):
+        sys.exit(f"Rscript not found ({RSCRIPT!r}); set the RSCRIPT environment variable to its full path")
     (ROOT / "logs").mkdir(exist_ok=True)
     for sid, lang, script, desc in steps:
         cmd = [PY, script] if lang == "python" else [RSCRIPT, script]
