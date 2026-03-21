@@ -276,3 +276,173 @@ risk groups of the protein model were not prognostic after adjustment (HR
 1.14, p = 0.54; Figure 8G).
 
 ---
+
+## 3. Discussion
+
+PDAC is still classified, staged for trials and searched for biomarkers almost
+entirely at the mRNA level. Resected PDAC is a low-cellularity tumour whose
+bulk profile mixes cancer cells, a dense desmoplastic stroma, immune cells and
+residual acinar parenchyma (Moffitt et al., 2015). Every bulk measurement is
+therefore an average over cell types whose mRNA and protein are regulated
+differently. Proteomics of the same tissue is the direct way to ask which
+transcriptomic conclusions survive translation, and CPTAC-3 has made such data
+public for PDAC (Cao et al., 2021).
+
+In this study, 136 tumours and 21 NATs with both layers from the same tissue
+powder were analysed after explicit sample matching and the removal of 11
+samples of duodenal origin. The median gene-wise mRNA-protein correlation was
+0.30 in tumours and 0.23 in NATs, and 68% of genes were significantly coupled.
+Copy-number effects reached the protein for 18% of genes. The basal-like axis
+was preserved in protein (rho 0.96) and was equally prognostic (HR 1.70).
+Genome-wide models did not exceed a clinical C-index of 0.622, whereas a
+single subtype score reached 0.632.
+
+The level of mRNA-protein coupling found here agrees with earlier CPTAC
+studies. In a similar analysis of the same cohort, the median correlation
+was 0.36 in tumours and 0.26 in NATs (Cao et al., 2021). The lower value here
+is probably due to processing: we used the public common-pipeline ratios
+(Rudnick et al., 2016) rather than the consortium's own quantification, and
+the 136-tumour set includes low-purity tumours. Across tumour types, the
+correlation varies widely and is lowest for housekeeping machinery (Arad and
+Geiger, 2023). In cultured cells, translation and degradation explain as much
+protein variation as mRNA does (Schwanhäusser et al., 2011). In accordance with
+all these studies and the study under discussion we can infer that mRNA is a
+useful but partial reporter of protein, and that its reliability is a
+property of the gene class. Composition accounted for only a small part of the
+coupling (median 0.30 to 0.26), so most of the agreement for stromal and
+interferon genes reflects transcriptional programmes that are translated
+faithfully, not only shifts in cell proportions.
+
+The genes least coupled were the subunits of large complexes, and the same
+genes buffered copy-number changes. Gonçalves et al. (2017) reported
+post-transcriptional attenuation of copy-number variation across cancer types,
+strongest for complex subunits. Liu et al. (2016) attributed this to the
+degradation of subunits produced in excess of their partners. Here,
+attenuation was larger for complex members (0.22 versus 0.17), and only 18% of
+mRNA dosage effects reached the protein. It can be inferred that aneuploidy in
+PDAC is largely buffered at the protein level, so copy-number-based target
+nomination must be confirmed in protein. The driver analysis adds a direct
+illustration. Missense *TP53* raised protein but not mRNA, which is consistent
+with stabilisation of the mutant protein, while truncating *TP53* lowered mRNA,
+which is consistent with nonsense-mediated decay. Neither effect would be
+seen from one layer alone.
+
+Tumour-versus-normal comparisons agreed in direction (rho 0.40-0.49), and
+pathway activity agreed better than single genes (0.50 versus 0.43). The
+opposite signs for oxidative phosphorylation and MYC targets are probably
+due to tissue composition. Normal pancreas is dominated by acinar cells with
+abundant mitochondria and ribosomes, so the tumour has less of this protein
+mass, while proliferating cancer cells transcribe more of these genes. The
+low Reactome agreement (0.04) is mostly explained by the redundancy of
+machinery-dominated sets, because it tripled when those sets were removed.
+For this reason, curated non-redundant collections such as Hallmark
+(Liberzon et al., 2015) should be preferred for cross-layer comparison.
+
+The tumour subtypes were the most robust cross-layer signal. Moffitt et al.
+(2015) derived the basal-like and classical programmes from transcriptomes
+after virtual microdissection, and Bailey et al. (2016) found a corresponding
+squamous class. In this cohort the protein score correlated with the mRNA
+score at 0.96 and carried the same hazard ratio. Basal-like tumours also
+respond less to modified FOLFIRINOX (Aung et al., 2018). In accordance with
+these studies and the study under discussion we can infer that the
+basal-like state is a biological state of the tumour expressed through
+abundant structural and secreted proteins, not a transcriptomic artefact.
+PurIST was not significant here although it is prognostic elsewhere (Rashid
+et al., 2020), probably because it calls only the clearly basal minority
+(17%) and the confidence interval in about 23 patients was wide.
+
+The prognostic analyses connect concordance and outcome. Genes with
+concordant mRNA and protein carried the same prognostic information in both
+layers (agreement 0.87 for genes with rho > 0.6), and discordant genes carried
+unrelated information. Ghoshdastider and Sendoel (2023) linked weaker
+post-transcriptional control to shorter survival across cancer types, but the
+per-tumour correlation was not prognostic here (HR 0.97). This is probably
+because it mainly follows cellularity in PDAC. Cross-validation showed that
+neither layer improved prediction when used genome-wide, and that a single
+pre-specified score did. Harrell et al. (1996) warned that models with many
+candidate predictors and few events overfit. The instability of the selected
+genes here supports that warning. It can be inferred that, in cohorts of this
+size, the value of the proteome is mechanistic, and prognostic modelling
+should use pre-specified scores.
+
+Spearman correlation was used for concordance because TMT ratios are
+compressed and a few extreme tumours can dominate a linear correlation. A
+permutation null was preferred to the analytical one because shared
+missingness and correlated genes inflate nominal significance. Cross-validated
+C-indices with nested tuning were reported instead of resubstitution
+estimates because only performance on unseen patients is informative (Harrell
+et al., 1996). The concordance values found here are consistent with the
+original analysis of the cohort (Cao et al., 2021), which supports the use of
+the public common-pipeline data for re-analysis.
+
+**Limitations.** This is a single cohort without external validation. Most
+patients had stage II disease and survival is overall rather than
+disease-specific. Normal-adjacent tissue is not normal pancreas, and 11
+samples had to be removed for duodenal contamination; histology was not
+available to confirm tissue identity. TMT ratio compression reduces protein
+effect sizes and may explain part of the weaker protein prognostic signal.
+Purity was estimated, not measured, and both estimates are noisy. Phospho- and
+glycoproteomes, which the original study analysed, were not used.
+
+Based on this study, it can be inferred that mRNA reliably reports protein
+for stromal, immune and subtype-defining genes but not for complex machinery
+or copy-number-driven changes, and that protein adds mechanistic rather than
+prognostic information in resected PDAC; therefore, transcriptomic biomarkers
+should be checked for protein concordance before clinical use, normal
+samples from Whipple specimens should be screened for duodenal contamination,
+and prognostic models should rest on pre-specified biological scores
+validated in independent cohorts.
+
+---
+
+## 4. Methods (summary)
+
+Full methods are in [`docs/methods.md`](../docs/methods.md).
+
+**Data.** Open-access CPTAC-3 pancreas files were downloaded from the GDC
+(Grossman et al., 2016): STAR gene counts (Dobin et al., 2013), masked somatic
+mutations, ASCAT gene-level copy number (Van Loo et al., 2010) and clinical
+records. The gene-level log2 ratios of PDC study PDC000270 were downloaded
+from the PDC (Rudnick et al., 2016). All files were md5-verified.
+
+**Matching and QC.** Samples were matched through shared sample identifiers
+and recorded in an SQLite database with match level and exclusion reason.
+Duodenal samples were flagged with a 17-gene intestinal marker score.
+Cellularity was estimated from *KRAS* allele fraction and ESTIMATE (Yoshihara
+et al., 2013).
+
+**Statistics.** Gene-wise Spearman correlations were corrected by the
+Benjamini-Hochberg method (Benjamini and Hochberg, 1995). RNA differential
+expression used DESeq2 (Love et al., 2014) with apeglm shrinkage (Zhu et al.,
+2019). Protein differential expression used limma (Ritchie et al., 2015) with
+duplicateCorrelation (Smyth et al., 2005). Pathways used fgsea (Korotkevich et
+al., 2016) and GSVA (Hänzelmann et al., 2013). Subtypes used PurIST (Rashid et
+al., 2020), the Moffitt signatures (Moffitt et al., 2015) and
+ConsensusClusterPlus (Wilkerson and Hayes, 2010) with PAC (Şenbabaoğlu et al.,
+2014), Cohen's kappa (Cohen, 1960) and the adjusted Rand index (Hubert and
+Arabie, 1985). Survival analysis used Cox models with Schoenfeld residual
+checks (Grambsch and Therneau, 1994), elastic-net Cox (Friedman et al., 2010;
+Simon et al., 2011) and Harrell's C (Harrell et al., 1996).
+
+**Software.** R 4.5.2, Bioconductor 3.22, CRAN snapshot of 15 December 2025
+(`renv.lock`) and Python 3.12 (`envs/environment.yml`). The full pipeline is
+run with `python run_pipeline.py`.
+
+## Data and code availability
+
+All data are open access at the GDC (project CPTAC-3) and the PDC (study
+PDC000270). Code, result tables, figures and the database schema are in this
+repository.
+
+## Figures
+
+1. Study design, data availability, sample matching and overall survival.
+2. Quality control: RNA and protein PCA, tissue identity, plex effects, purity.
+3. mRNA-protein concordance at gene, gene-set and tumour level.
+4. Tumour versus normal differential expression in mRNA and protein.
+5. Pathway enrichment and pathway-level concordance.
+6. PDAC subtypes in mRNA and protein; unsupervised clustering.
+7. Copy-number dosage attenuation and driver cis effects.
+8. Survival: subtypes, gene-level prognosis and cross-validated models.
+
+S1. Survival by subtype classifier and unsupervised cluster.
