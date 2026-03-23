@@ -446,3 +446,44 @@ repository.
 8. Survival: subtypes, gene-level prognosis and cross-validated models.
 
 S1. Survival by subtype classifier and unsupervised cluster.
+
+## References
+
+* Arad G, Geiger T (2023). Functional Impact of Protein–RNA Variation in Clinical Cancer Analyses. *Molecular & Cellular Proteomics* 22(7):100587. https://doi.org/10.1016/j.mcpro.2023.100587
+* Aung KL, Fischer SE, Denroche RE, Jang GH, Dodd A, Creighton S, et al. (2018). Genomics-Driven Precision Medicine for Advanced Pancreatic Cancer: Early Results from the COMPASS Trial. *Clinical Cancer Research* 24(6):1344-1354. https://doi.org/10.1158/1078-0432.ccr-17-2994
+* Bailey P, Chang DK, Nones K, Johns AL, Patch AM, Gingras MC, et al. (2016). Genomic analyses identify molecular subtypes of pancreatic cancer. *Nature* 531(7592):47-52. https://doi.org/10.1038/nature16965
+* Benjamini Y, Hochberg Y (1995). Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. *Journal of the Royal Statistical Society Series B: Statistical Methodology* 57(1):289-300. https://doi.org/10.1111/j.2517-6161.1995.tb02031.x
+* Cao L, Huang C, Cui Zhou D, Hu Y, Lih TM, Savage SR, et al. (2021). Proteogenomic characterization of pancreatic ductal adenocarcinoma. *Cell* 184(19):5031-5052.e26. https://doi.org/10.1016/j.cell.2021.08.023
+* Cohen J (1960). A Coefficient of Agreement for Nominal Scales. *Educational and Psychological Measurement* 20(1):37-46. https://doi.org/10.1177/001316446002000104
+* Collisson EA, Sadanandam A, Olson P, Gibb WJ, Truitt M, Gu S, et al. (2011). Subtypes of pancreatic ductal adenocarcinoma and their differing responses to therapy. *Nature Medicine* 17(4):500-503. https://doi.org/10.1038/nm.2344
+* Conroy T, Hammel P, Hebbar M, Ben Abdelghani M, Wei AC, Raoul JL, et al. (2018). FOLFIRINOX or Gemcitabine as Adjuvant Therapy for Pancreatic Cancer. *New England Journal of Medicine* 379(25):2395-2406. https://doi.org/10.1056/nejmoa1809775
+* Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, et al. (2013). STAR: ultrafast universal RNA-seq aligner. *Bioinformatics* 29(1):15-21. https://doi.org/10.1093/bioinformatics/bts635
+* Friedman J, Hastie T, Tibshirani R (2010). Regularization Paths for Generalized Linear Models via Coordinate Descent. *Journal of Statistical Software* 33(1). https://doi.org/10.18637/jss.v033.i01
+* Ghoshdastider U, Sendoel A (2023). Exploring the pan-cancer landscape of posttranscriptional regulation. *Cell Reports* 42(10):113172. https://doi.org/10.1016/j.celrep.2023.113172
+* Gillespie M, Jassal B, Stephan R, Milacic M, Rothfels K, Senff-Ribeiro A, et al. (2022). The reactome pathway knowledgebase 2022. *Nucleic Acids Research* 50(D1):D687-D692. https://doi.org/10.1093/nar/gkab1028
+* Gonçalves E, Fragoulis A, Garcia-Alonso L, Cramer T, Saez-Rodriguez J, Beltrao P (2017). Widespread Post-transcriptional Attenuation of Genomic Copy-Number Variation in Cancer. *Cell Systems* 5(4):386-398.e4. https://doi.org/10.1016/j.cels.2017.08.013
+* Grambsch PM, Therneau TM (1994). Proportional hazards tests and diagnostics based on weighted residuals. *Biometrika* 81(3):515-526. https://doi.org/10.1093/biomet/81.3.515
+* Grossman RL, Heath AP, Ferretti V, Varmus HE, Lowy DR, Kibbe WA, et al. (2016). Toward a Shared Vision for Cancer Genomic Data. *New England Journal of Medicine* 375(12):1109-1112. https://doi.org/10.1056/nejmp1607591
+* Hänzelmann S, Castelo R, Guinney J (2013). GSVA: gene set variation analysis for microarray and RNA-Seq data. *BMC Bioinformatics* 14(1). https://doi.org/10.1186/1471-2105-14-7
+* Harrell FE, Lee KL, Mark DB (1996). Multivariable prognostic models: issues in developing models, evaluating assumptions and adequacy, and measuring and reducing errors. *Statistics in Medicine* 15(4):361-387. https://doi.org/10.1002/(sici)1097-0258(19960229)15:4<361::aid-sim168>3.0.co;2-4
+* Hubert L, Arabie P (1985). Comparing partitions. *Journal of Classification* 2(1):193-218. https://doi.org/10.1007/bf01908075
+* Korotkevich G, Sukhov V, Budin N, Shpak B, Artyomov MN, Sergushichev A (2016). Fast gene set enrichment analysis. *bioRxiv*. https://doi.org/10.1101/060012
+* Li Y, Dou Y, Da Veiga Leprevost F, Geffen Y, Calinawan AP, Aguet F, et al. (2023). Proteogenomic data and resources for pan-cancer analysis. *Cancer Cell* 41(8):1397-1406. https://doi.org/10.1016/j.ccell.2023.06.009
+* Liberzon A, Birger C, Thorvaldsdóttir H, Ghandi M, Mesirov JP, Tamayo P (2015). The Molecular Signatures Database Hallmark Gene Set Collection. *Cell Systems* 1(6):417-425. https://doi.org/10.1016/j.cels.2015.12.004
+* Liu Y, Beyer A, Aebersold R (2016). On the Dependency of Cellular Protein Levels on mRNA Abundance. *Cell* 165(3):535-550. https://doi.org/10.1016/j.cell.2016.03.014
+* Love MI, Huber W, Anders S (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology* 15(12). https://doi.org/10.1186/s13059-014-0550-8
+* Moffitt RA, Marayati R, Flate EL, Volmar KE, Loeza SGH, Hoadley KA, et al. (2015). Virtual microdissection identifies distinct tumor- and stroma-specific subtypes of pancreatic ductal adenocarcinoma. *Nature Genetics* 47(10):1168-1178. https://doi.org/10.1038/ng.3398
+* Rahib L, Smith BD, Aizenberg R, Rosenzweig AB, Fleshman JM, Matrisian LM (2014). Projecting Cancer Incidence and Deaths to 2030: The Unexpected Burden of Thyroid, Liver, and Pancreas Cancers in the United States. *Cancer Research* 74(11):2913-2921. https://doi.org/10.1158/0008-5472.can-14-0155
+* Rashid NU, Peng XL, Jin C, Moffitt RA, Volmar KE, Belt BA, et al. (2020). Purity Independent Subtyping of Tumors (PurIST), A Clinically Robust, Single-sample Classifier for Tumor Subtyping in Pancreatic Cancer. *Clinical Cancer Research* 26(1):82-92. https://doi.org/10.1158/1078-0432.ccr-19-1467
+* Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, et al. (2015). limma powers differential expression analyses for RNA-sequencing and microarray studies. *Nucleic Acids Research* 43(7):e47-e47. https://doi.org/10.1093/nar/gkv007
+* Rudnick PA, Markey SP, Roth J, Mirokhin Y, Yan X, Tchekhovskoi DV, et al. (2016). A Description of the Clinical Proteomic Tumor Analysis Consortium (CPTAC) Common Data Analysis Pipeline. *Journal of Proteome Research* 15(3):1023-1032. https://doi.org/10.1021/acs.jproteome.5b01091
+* Savage SR, Yi X, Lei JT, Wen B, Zhao H, Liao Y, et al. (2024). Pan-cancer proteogenomics expands the landscape of therapeutic targets. *Cell* 187(16):4389-4407.e15. https://doi.org/10.1016/j.cell.2024.05.039
+* Schwanhäusser B, Busse D, Li N, Dittmar G, Schuchhardt J, Wolf J, et al. (2011). Global quantification of mammalian gene expression control. *Nature* 473(7347):337-342. https://doi.org/10.1038/nature10098
+* Șenbabaoğlu Y, Michailidis G, Li JZ (2014). Critical limitations of consensus clustering in class discovery. *Scientific Reports* 4(1). https://doi.org/10.1038/srep06207
+* Siegel RL, Giaquinto AN, Jemal A (2024). Cancer statistics, 2024. *CA: A Cancer Journal for Clinicians* 74(1):12-49. https://doi.org/10.3322/caac.21820
+* Simon N, Friedman J, Hastie T, Tibshirani R (2011). Regularization Paths for Cox's Proportional Hazards Model via Coordinate Descent. *Journal of Statistical Software* 39(5). https://doi.org/10.18637/jss.v039.i05
+* Smyth GK, Michaud J, Scott HS (2005). Use of within-array replicate spots for assessing differential expression in microarray experiments. *Bioinformatics* 21(9):2067-2075. https://doi.org/10.1093/bioinformatics/bti270
+* Van Loo P, Nordgard SH, Lingjærde OC, Russnes HG, Rye IH, Sun W, et al. (2010). Allele-specific copy number analysis of tumors. *Proceedings of the National Academy of Sciences* 107(39):16910-16915. https://doi.org/10.1073/pnas.1009843107
+* Wilkerson MD, Hayes DN (2010). ConsensusClusterPlus: a class discovery tool with confidence assessments and item tracking. *Bioinformatics* 26(12):1572-1573. https://doi.org/10.1093/bioinformatics/btq170
+* Yoshihara K, Shahmoradgoli M, Martínez E, Vegesna R, Kim H, Torres-Garcia W, et al. (2013). Inferring tumour purity and stromal and immune cell admixture from expression data. *Nature Communications* 4(1). https://doi.org/10.1038/ncomms3612
+* Zhu A, Ibrahim JG, Love MI (2019). Heavy-tailed prior distributions for sequence count data: removing the noise and preserving large differences. *Bioinformatics* 35(12):2084-2092. https://doi.org/10.1093/bioinformatics/bty895
