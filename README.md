@@ -15,6 +15,32 @@ and stored in an SQLite database.
 
 ---
 
+## Key findings
+
+| | |
+|---|---|
+| **Cohort** | 136 PDAC tumours with RNA and protein from the same tissue (80 same piece, 56 pooled pieces) + 21 matched normal-adjacent tissues; 133 patients with survival (105 deaths within 5 years) |
+| **Quality control** | 10 "normal pancreas" samples and 1 tumour were **duodenal mucosa** (Whipple resections include duodenum), detected with an intestinal marker score and excluded |
+| **Concordance** | Median gene-wise mRNA-protein Spearman rho **0.30** (permutation null 0.00); 68% of 9,254 genes significantly coupled. Highest: EMT, collagens, interferon/MHC, immunoglobulins. Lowest: ribosome, respiratory chain, spliceosome, proteasome. Removing tissue composition only lowers the median to 0.26 |
+| **Tumour coherence** | Per-tumour mRNA-protein agreement rises with cancer-cell content (rho 0.40 with KRAS-VAF cellularity); pooled and single-piece proteomes are equally coherent |
+| **DNA → protein** | Copy-number changes reach mRNA for 4,304 genes but protein for only 793; complex subunits are buffered most (p = 3e-31). TP53 missense raises **protein** (stabilisation), TP53 truncation lowers **mRNA** (nonsense-mediated decay); SMAD4 deletion is visible in both layers |
+| **Tumour vs normal** | 2,525 mRNA and 2,498 protein changes; fold changes correlate at rho 0.40 (0.49 on identical samples). OXPHOS and MYC targets go up in mRNA but down in protein: loss of acinar protein mass vs per-cell programmes |
+| **Pathways** | Pathway activity (GSVA) agrees better between layers than single genes (median rho 0.50 vs 0.43, p = 9e-5) |
+| **Subtypes** | The Moffitt basal-like/classical axis is the same at both layers (score rho 0.96; kappa 0.70) and **equally prognostic by protein** (adjusted HR 1.70 in both). Unsupervised clusters mainly track tissue composition |
+| **Prognosis** | Genes that are concordant are prognostic in both layers (log-HR agreement 0.87 for rho > 0.6 vs 0.07 for rho < 0.2). In 50 × 5-fold CV, genome-wide elastic-net models from mRNA, protein or both **do not beat** clinical pathology (C 0.62); a single pre-specified Moffitt score does (C 0.63, better in 84% of repeats) |
+
+## Figures
+
+| | |
+|---|---|
+| ![](results/figures/Fig1_cohort.png) Fig 1. Design, data availability, matching, survival | ![](results/figures/Fig2_qc_purity.png) Fig 2. QC, duodenal contamination, plex effects, purity |
+| ![](results/figures/Fig3_concordance.png) Fig 3. mRNA-protein concordance | ![](results/figures/Fig4_differential_expression.png) Fig 4. Tumour vs normal in both layers |
+| ![](results/figures/Fig5_pathways.png) Fig 5. Pathway-level agreement | ![](results/figures/Fig6_subtypes.png) Fig 6. Subtypes in mRNA and protein |
+| ![](results/figures/Fig7_genomic_cis.png) Fig 7. Copy-number and driver effects | ![](results/figures/Fig8_survival.png) Fig 8. Survival and prognostic models |
+
+Every figure is available as SVG, 300 dpi PNG and JPG. A panel-by-panel guide
+is in [`docs/figures.md`](docs/figures.md).
+
 ## Relation to published work
 
 The cohort was published by the CPTAC consortium in Cao et al., *Cell*
