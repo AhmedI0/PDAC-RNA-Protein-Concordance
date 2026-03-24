@@ -91,6 +91,25 @@ Set `RSCRIPT` to the full path of `Rscript` if it is not on `PATH`. Software
 versions are frozen (R 4.5.2, Bioconductor 3.22, CRAN snapshot 2025-12-15,
 Python 3.12); random seeds are in `config/config.yaml`.
 
+## Database
+
+`db/cancer_proteogenomics.sqlite` holds cases, follow-ups, treatments, all GDC
+files and PDC aliquots, the aliquot-to-sample links, the RNA-protein matches
+with inclusion flags and reasons, and every result table (`res_*`, indexed in
+`results_index`).
+
+```sql
+-- matched tumours and how they were matched
+SELECT match_level, COUNT(*) FROM sample_matches
+WHERE tissue = 'Tumor' AND included = 1 GROUP BY match_level;
+
+-- genes concordant in both layers and prognostic in both
+SELECT gene, rho_tumour, exp(logHR_RNA) AS HR_RNA, exp(logHR_Protein) AS HR_Protein
+FROM res_survival_gene_cox
+WHERE rho_tumour > 0.6 AND p_RNA < 0.01 AND p_Protein < 0.01
+ORDER BY p_RNA;
+```
+
 ## Data and licence
 
 Data: CPTAC-3 open-access files from the GDC and PDC, used under the NCI data
