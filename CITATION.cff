@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or its results, please cite it as below, and cite the original CPTAC PDAC study."
+title: "PDAC-RNA-Protein-Concordance: mRNA-protein agreement, subtypes and survival in CPTAC-3 pancreatic ductal adenocarcinoma"
+type: software
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Mushtaq
+    given-names: Muhammad Ahmed
+repository-code: "https://github.com/AhmedI0/PDAC-RNA-Protein-Concordance"
+keywords:
+  - proteogenomics
+  - pancreatic cancer
+  - CPTAC
+  - transcriptomics
+  - proteomics
+  - survival analysis
+references:
+  - type: article
+    title: "Proteogenomic characterization of pancreatic ductal adenocarcinoma"
+    authors:
+      - family-names: Cao
+        given-names: Liwei
+      - name: "Clinical Proteomic Tumor Analysis Consortium"
+    journal: Cell
+    volume: 184
+    issue: 19
+    start: 5031
+    end: 5052
+    year: 2021
+    doi: 10.1016/j.cell.2021.08.023
