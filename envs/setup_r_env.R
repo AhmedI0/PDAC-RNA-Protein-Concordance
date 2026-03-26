@@ -20,7 +20,7 @@ if (!requireNamespace("renv", quietly = TRUE)) {
 if (!file.exists("renv/activate.R")) {
   renv::init(bare = TRUE, restart = FALSE, settings = list(
     bioconductor.version = bioc_version,
-    snapshot.type = "explicit"
+    snapshot.type = "implicit"
   ))
 }
 source("renv/activate.R")
@@ -31,11 +31,11 @@ cran_pkgs <- c(
   "BiocManager", "data.table", "yaml", "jsonlite", "DBI", "RSQLite",
   "ggplot2", "ggrepel", "patchwork", "scales", "svglite", "ragg",
   "survival", "ggsurvfit", "glmnet", "matrixStats", "tidyestimate",
-  "aricode", "circlize", "msigdbr", "testthat"
+  "aricode", "msigdbr", "testthat", "R.utils", "RColorBrewer"
 )
 bioc_pkgs <- c(
-  "DESeq2", "limma", "edgeR", "apeglm", "fgsea", "GSVA",
-  "ComplexHeatmap", "ConsensusClusterPlus", "AnnotationDbi",
+  "DESeq2", "limma", "apeglm", "fgsea", "GSVA",
+  "ConsensusClusterPlus", "AnnotationDbi",
   "org.Hs.eg.db", "SummarizedExperiment", "BiocParallel"
 )
 
