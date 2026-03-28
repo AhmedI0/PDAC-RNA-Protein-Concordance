@@ -2,7 +2,7 @@
 
 Nothing in `raw/`, `interim/` or `processed/` is committed: every file is
 downloaded or rebuilt by the pipeline (`python run_pipeline.py`). Total size
-after a full run is about 2.5 GB.
+after a full run is about 1.7 GB, almost all of it the raw GDC downloads.
 
 | Folder | Written by | Contents |
 |---|---|---|
