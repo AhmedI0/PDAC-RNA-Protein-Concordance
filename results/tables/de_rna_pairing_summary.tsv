@@ -1,0 +1,46 @@
+metric	value
+"RNA tumours"	160
+"RNA NATs"	42
+"tumour-NAT pairs (RNA)"	42
+"genes compared"	16782
+"voom patient block consensus correlation"	0.206
+"DESeq2 up"	1266
+"DESeq2 down"	1259
+"voom up"	1274
+"voom down"	1134
+"voom blocked up"	1269
+"voom blocked down"	1146
+"DE calls kept after blocking (% of voom calls)"	98.6
+"DE calls gained by blocking"	41
+"Jaccard of DE calls, voom vs voom blocked"	0.969
+"Jaccard of DE calls, DESeq2 vs voom blocked"	0.773
+"Spearman rho of t, voom vs voom blocked"	0.999
+"Spearman rho of log2FC, voom vs voom blocked"	0.999
+"Spearman rho of log2FC, DESeq2 (MLE) vs voom blocked"	0.968
+"pairs only: DESeq2 ~ tissue DE genes"	2251
+"pairs only: DESeq2 ~ patient + tissue DE genes"	2122
+"pairs only: Jaccard of DE calls, unpaired vs paired"	0.77
+"pairs only: Spearman rho of Wald statistics, unpaired vs paired"	0.984
+"RNA-protein fold-change rho, voom"	0.408
+"RNA-protein fold-change rho, voom blocked"	0.414
+"Opposite-direction genes, voom"	18
+"Opposite-direction genes, voom blocked"	18
+"Hallmark NES rho, voom vs voom blocked"	0.999
+"Hallmark NES rho, DESeq2 vs voom blocked"	0.972
+"Hallmark sets significant, DESeq2"	32
+"Hallmark sets significant, voom blocked"	34
+"Hallmark sets changing significance or direction, voom vs voom blocked"	1
+"OXPHOS NES (voom blocked)"	1.66
+"MYC targets V1 NES (voom blocked)"	2.66
+"category, voom blocked: Concordant down"	200
+"category, voom: Concordant down"	195
+"category, voom blocked: Concordant up"	334
+"category, voom: Concordant up"	332
+"category, voom blocked: Neither"	6504
+"category, voom: Neither"	6501
+"category, voom blocked: Opposite"	18
+"category, voom: Opposite"	18
+"category, voom blocked: Protein only"	1857
+"category, voom: Protein only"	1864
+"category, voom blocked: mRNA only"	300
+"category, voom: mRNA only"	303
