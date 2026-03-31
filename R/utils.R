@@ -89,7 +89,30 @@ save_fig <- function(plot, name, width, height, units = "mm") {
          dpi = 300, device = ragg::agg_png, bg = "white")
   ggsave(paste0(base, ".jpg"), plot, width = width, height = height, units = units,
          dpi = 300, device = ragg::agg_jpeg, quality = 95, bg = "white")
+  jpeg_set_dpi(paste0(base, ".jpg"), 300)
   invisible(base)
+}
+
+# ragg writes JPEGs as RGB (Adobe marker) with no resolution, so Word, image
+# viewers and journal upload checks read the 300 dpi files as 72 or 96 dpi.
+# Add an Exif block that records the resolution. A JFIF header is the usual
+# place, but JFIF implies YCbCr and decoders would then misread the RGB data.
+# The image data are not changed.
+jpeg_set_dpi <- function(path, dpi = 300) {
+  b <- readBin(path, "raw", file.size(path))
+  stopifnot(identical(b[1:2], as.raw(c(0xff, 0xd8))))
+  if (identical(b[3:4], as.raw(c(0xff, 0xe1)))) return(invisible(path))  # Exif already there
+  u16 <- function(x) as.raw(c(x %/% 256, x %% 256))
+  u32 <- function(x) c(u16(x %/% 65536), u16(x %% 65536))
+  entry <- function(tag, type, value) c(u16(tag), u16(type), u32(1), value)
+  tiff <- c(charToRaw("MM"), u16(42), u32(8), u16(3),        # big-endian TIFF, IFD at offset 8
+            entry(0x011A, 5, u32(50)),                       # XResolution: rational at offset 50
+            entry(0x011B, 5, u32(58)),                       # YResolution: rational at offset 58
+            entry(0x0128, 3, c(u16(2), u16(0))),             # ResolutionUnit: inch
+            u32(0), u32(dpi), u32(1), u32(dpi), u32(1))
+  exif <- c(charToRaw("Exif"), as.raw(c(0, 0)), tiff)
+  writeBin(c(b[1:2], as.raw(c(0xff, 0xe1)), u16(length(exif) + 2), exif, b[-(1:2)]), path)
+  invisible(path)
 }
 
 # Same for base-graphics / grid objects (ComplexHeatmap): `draw_fun` draws the figure.
@@ -100,6 +123,7 @@ save_fig_base <- function(draw_fun, name, width, height) {
   svglite::svglite(paste0(base, ".svg"), width = w, height = h); draw_fun(); dev.off()
   ragg::agg_png(paste0(base, ".png"), width = w, height = h, units = "in", res = 300, background = "white"); draw_fun(); dev.off()
   ragg::agg_jpeg(paste0(base, ".jpg"), width = w, height = h, units = "in", res = 300, quality = 95, background = "white"); draw_fun(); dev.off()
+  jpeg_set_dpi(paste0(base, ".jpg"), 300)
   invisible(base)
 }
 

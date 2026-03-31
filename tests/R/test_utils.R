@@ -25,3 +25,17 @@ test_that("survival_table censors at the administrative limit and codes covariat
   expect_equal(as.character(d[case_submitter_id == "C3", stage]), "unknown")
   expect_false("unknown" %in% levels(d$grade))                          # empty levels dropped
 })
+
+test_that("jpeg_set_dpi records 300 dpi and leaves the image data alone", {
+  f <- tempfile(fileext = ".jpg")
+  ragg::agg_jpeg(f, width = 1, height = 1, units = "in", res = 300, quality = 95, background = "white")
+  grid::grid.rect(gp = grid::gpar(fill = "steelblue")); invisible(dev.off())
+  before <- readBin(f, "raw", file.size(f))
+  jpeg_set_dpi(f, 300)
+  jpeg_set_dpi(f, 300)                                                  # a second call adds nothing
+  after <- readBin(f, "raw", file.size(f))
+  expect_equal(length(after), length(before) + 76)                      # APP1 marker + 74-byte Exif segment
+  expect_identical(after[c(1:2, 79:length(after))], before)             # everything else byte-identical
+  expect_identical(rawToChar(after[7:10]), "Exif")
+  expect_identical(after[c(65:66, 73:74)], as.raw(c(0x01, 0x2c, 0x01, 0x2c)))  # X and Y resolution 300
+})
