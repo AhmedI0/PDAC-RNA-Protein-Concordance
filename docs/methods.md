@@ -116,6 +116,15 @@ homozygous deletion) and wild type (Mann-Whitney, BH-FDR).
   ratios are compressed by co-isolation interference). Genes were classified
   as concordant up/down, mRNA-only, protein-only or opposite. A sensitivity
   analysis repeated both models on the identical matched samples.
+* **RNA pairing sensitivity**: all 42 RNA NATs have a tumour from the same
+  patient, which DESeq2 `~ tissue` treats as independent. The RNA comparison
+  was refitted with limma-voom [law2014] on the same samples and genes, using
+  DESeq2 size factors as effective library sizes, once without and once with
+  patient as a random block (two voom passes with `duplicateCorrelation`).
+  DESeq2 was also fitted on the 42 pairs alone with `~ tissue` and
+  `~ patient + tissue`. DE calls, the RNA-protein categories and Hallmark GSEA
+  were compared between models. The within-patient correlation was 0.21;
+  blocking kept 98.6% of the calls and reversed none.
 
 ## 8. Pathways (step 10)
 

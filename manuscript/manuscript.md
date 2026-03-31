@@ -197,6 +197,19 @@ proteins up and 1,269 down (FDR < 5%, |log2FC| > 0.5; Figure 4B). Fold changes
 of the 9,213 genes in both layers correlated at rho = 0.40, and at 0.49 when
 both models used the identical matched samples (Figure 4C).
 
+All 42 RNA NATs were paired with a tumour from the same patient, a dependence
+that the DESeq2 model does not represent. Refitting the RNA comparison with
+limma-voom (Law et al., 2014) and patient as a random block estimated a
+within-patient correlation of 0.21. Blocking kept 98.6% of the genes called
+without it, reversed none, and moved one Hallmark set (myogenesis) from
+significant to not significant. The RNA-protein fold-change correlation (0.41),
+the number of opposite-direction genes (18) and the rise of oxidative
+phosphorylation and MYC targets in mRNA were the same with and without the
+block. On the 42 pairs alone, adding patient to the DESeq2 design gave 2,122
+changed genes against 2,251 without it (Wald statistics rho = 0.98). Calls from
+voom and DESeq2 overlapped less (Jaccard index 0.77, against 0.97 for blocked
+and unblocked voom), so the choice of model mattered more than the pairing.
+
 Concordant increases (313 genes) were led by squamous and invasion genes
 (*LGALS7*, *LY6D*, *KRT13*, *SPRR1A*, *A2ML1*). Concordant decreases (251)
 were led by acinar enzymes (*CTRL*, *CEL*, *CTRB1*, *CELA3B*, *AMY2A*). Changes
@@ -414,10 +427,11 @@ et al., 2013).
 **Statistics.** Gene-wise Spearman correlations were corrected by the
 Benjamini-Hochberg method (Benjamini and Hochberg, 1995). RNA differential
 expression used DESeq2 (Love et al., 2014) with apeglm shrinkage (Zhu et al.,
-2019). Protein differential expression used limma (Ritchie et al., 2015) with
-duplicateCorrelation (Smyth et al., 2005). Pathways used fgsea (Korotkevich et
-al., 2016) and GSVA (Hänzelmann et al., 2013). Subtypes used PurIST (Rashid et
-al., 2020), the Moffitt signatures (Moffitt et al., 2015) and
+2019); a sensitivity analysis used limma-voom (Law et al., 2014) with patient
+as a random block. Protein differential expression used limma (Ritchie et al.,
+2015) with duplicateCorrelation (Smyth et al., 2005). Pathways used fgsea
+(Korotkevich et al., 2016) and GSVA (Hänzelmann et al., 2013). Subtypes used
+PurIST (Rashid et al., 2020), the Moffitt signatures (Moffitt et al., 2015) and
 ConsensusClusterPlus (Wilkerson and Hayes, 2010) with PAC (Şenbabaoğlu et al.,
 2014), Cohen's kappa (Cohen, 1960) and the adjusted Rand index (Hubert and
 Arabie, 1985). Survival analysis used Cox models with Schoenfeld residual
@@ -468,6 +482,7 @@ S1. Survival by subtype classifier and unsupervised cluster.
 * Harrell FE, Lee KL, Mark DB (1996). Multivariable prognostic models: issues in developing models, evaluating assumptions and adequacy, and measuring and reducing errors. *Statistics in Medicine* 15(4):361-387. https://doi.org/10.1002/(sici)1097-0258(19960229)15:4<361::aid-sim168>3.0.co;2-4
 * Hubert L, Arabie P (1985). Comparing partitions. *Journal of Classification* 2(1):193-218. https://doi.org/10.1007/bf01908075
 * Korotkevich G, Sukhov V, Budin N, Shpak B, Artyomov MN, Sergushichev A (2016). Fast gene set enrichment analysis. *bioRxiv*. https://doi.org/10.1101/060012
+* Law CW, Chen Y, Shi W, Smyth GK (2014). voom: precision weights unlock linear model analysis tools for RNA-seq read counts. *Genome Biology* 15(2). https://doi.org/10.1186/gb-2014-15-2-r29
 * Li Y, Dou Y, Da Veiga Leprevost F, Geffen Y, Calinawan AP, Aguet F, et al. (2023). Proteogenomic data and resources for pan-cancer analysis. *Cancer Cell* 41(8):1397-1406. https://doi.org/10.1016/j.ccell.2023.06.009
 * Liberzon A, Birger C, Thorvaldsdóttir H, Ghandi M, Mesirov JP, Tamayo P (2015). The Molecular Signatures Database Hallmark Gene Set Collection. *Cell Systems* 1(6):417-425. https://doi.org/10.1016/j.cels.2015.12.004
 * Liu Y, Beyer A, Aebersold R (2016). On the Dependency of Cellular Protein Levels on mRNA Abundance. *Cell* 165(3):535-550. https://doi.org/10.1016/j.cell.2016.03.014

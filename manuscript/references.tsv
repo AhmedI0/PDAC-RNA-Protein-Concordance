@@ -14,6 +14,7 @@ love2014	10.1186/s13059-014-0550-8	Moderated estimation of fold change and dispe
 zhu2019	10.1093/bioinformatics/bty895	Heavy-tailed prior distributions for sequence count data	apeglm shrinkage
 ritchie2015	10.1093/nar/gkv007	limma powers differential expression analyses	limma
 smyth2005	10.1093/bioinformatics/bti270	Use of within-array replicate spots for assessing differential expression	duplicateCorrelation
+law2014	10.1186/gb-2014-15-2-r29	voom: precision weights unlock linear model analysis tools for RNA-seq read counts	limma-voom
 benjamini1995	10.1111/j.2517-6161.1995.tb02031.x	Controlling the False Discovery Rate	Benjamini-Hochberg FDR
 korotkevich2016	10.1101/060012	Fast gene set enrichment analysis	fgsea
 hanzelmann2013	10.1186/1471-2105-14-7	GSVA: gene set variation analysis	GSVA
